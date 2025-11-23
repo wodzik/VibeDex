@@ -4,7 +4,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 const workerImportMetaUrlRE = /\bnew\s+(?:Worker|SharedWorker)\s*\(\s*(new\s+URL\s*\(\s*('[^']+'|"[^"]+"|`[^`]+`)\s*,\s*import\.meta\.url\s*\))/g;
 
 export default defineConfig({
-  base: "/",
+  // For GitHub Pages project site: https://wodzik.github.io/VibeDex
+  // the app is served from /VibeDex/, not from the domain root.
+  base: "/VibeDex/",
   build: {
     chunkSizeWarningLimit: 2048
   },
