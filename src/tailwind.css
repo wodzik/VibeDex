@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom dark mode styles */
+.dark {
+  --bg-color: #1a202c;
+  --text-color: #a0aec0;
+  --border-color: #2d3748;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.border {
+  border-color: var(--border-color);
+}
+
+.circle {
+  background-color: orange;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%; 
+}
+
+/* Custom styles for the switch */
+input:checked + div {
+  background-color: #3b82f6; /* Change when checked */
+}
+
+input:checked + div + .dot {
+  transform: translateX(1.25rem); /* Move the dot to the right */
+}
+
+.dot {
+  transform: translateX(0); /* Initial position of the dot */
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 0; }
+}
+
+#flashing-indicator {
+  animation: flash 1s infinite;
+}
+
+.selected {
+  @apply bg-blue-100 dark:bg-gray-700;
+}

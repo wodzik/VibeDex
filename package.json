@@ -1,0 +1,32 @@
+{
+  "name": "cubedex",
+  "private": true,
+  "version": "1.0.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && npx tailwindcss -i ./src/tailwind.css -o ./src/style.css",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/aes-js": "^3.1.4",
+    "@types/node": "^22.7.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-plugin-pwa": "^0.20.2"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.30",
+    "@types/web-bluetooth": "^0.0.20",
+    "aes-js": "^3.1.2",
+    "chart.js": "^4.4.5",
+    "cubing": "^0.51.0",
+    "gan-web-bluetooth": "^3.0.2",
+    "jquery": "^3.7.1",
+    "lz-string": "^1.5.0",
+    "rxjs": "^7.8.1"
+  }
+}
