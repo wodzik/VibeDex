@@ -124,11 +124,50 @@ var currentMoveIndex = 0;
 var inputMode: boolean = true;
 var scrambleMode: boolean = false;
 
-// PLL Attack mode state
-let pllAttackMode: boolean = false;
-let pllAttackQueue: Algorithm[] = [];
-let pllAttackIndex: number = 0;
-let pllAttackSessionActive: boolean = false;
+type AttackCategory = 'PLL' | 'OLL';
+
+const ATTACK_CONFIG: Record<AttackCategory, { listContainer: string; listSelector: string; label: string; sessionId: string }> = {
+  PLL: {
+    listContainer: '#pll-attack-list-container',
+    listSelector: '#pll-attack-list',
+    label: 'PLL Attack',
+    sessionId: 'pll-attack-session'
+  },
+  OLL: {
+    listContainer: '#oll-attack-list-container',
+    listSelector: '#oll-attack-list',
+    label: 'OLL Attack',
+    sessionId: 'oll-attack-session'
+  }
+};
+
+let attackModeCategory: AttackCategory | null = null;
+let attackQueue: Algorithm[] = [];
+let attackIndex: number = 0;
+let attackSessionCategory: AttackCategory | null = null;
+let visibleAttackScreen: AttackCategory | null = null;
+
+function hideAttackLists() {
+  Object.values(ATTACK_CONFIG).forEach(cfg => $(cfg.listContainer).hide());
+  visibleAttackScreen = null;
+}
+
+function deactivateAttackMode() {
+  attackModeCategory = null;
+  attackQueue = [];
+  attackIndex = 0;
+  attackSessionCategory = null;
+}
+
+function showAttackList(category: AttackCategory) {
+  hideAttackLists();
+  $(ATTACK_CONFIG[category].listContainer).show();
+  visibleAttackScreen = category;
+}
+
+function getAttackContextCategory(): AttackCategory | null {
+  return attackSessionCategory || visibleAttackScreen;
+}
 
 function resetAlg() {
   currentMoveIndex = -1; // Reset the move index
@@ -143,24 +182,54 @@ function resetTimerForModeSwitch() {
   solutionMoves = [];
   currentTimerValue = 0;
   $('#timer').text('').hide();
+  deactivateAttackMode();
+}
+
+function openAttackScreen(category: AttackCategory) {
+  resetTimerForModeSwitch();
+  $('#top-row').show();
+  $('#main-column').show();
+  $('#app-top').show();
+  $('#load-container').hide();
+  $('#save-container').hide();
+  $('#options-container').hide();
+  $('#help').hide();
+  $('#info').hide();
+  $('#alg-stats').hide();
+  $('#alg-name-display-container').hide();
+
+  showAttackList(category);
+  renderAttackList(category);
+
+  attackQueue = buildAttackQueue(category);
+  attackIndex = 0;
+  attackModeCategory = attackQueue.length > 0 ? category : null;
+
+  if (attackModeCategory && attackQueue.length > 0) {
+    $('#alg-input').val(attackQueue[0].algorithm);
+    $('#train-alg').trigger('click');
+  } else {
+    $('#alg-display').text('');
+    $('#alg-display-container').hide();
+    $('#timer').hide();
+  }
 }
 
 $('#train-alg').on('click', () => {
-  // Special handling: if we're in PLL Attack mode and timer is running,
+  // Special handling: if we're in Attack mode and timer is running,
   // treat clicking the button as a manual STOP that resets the whole attack
-  // WITHOUT saving a time for the PLL Attack session.
-  if (pllAttackMode && timerState === "RUNNING") {
+  // WITHOUT saving a time for the attack session.
+  if (attackModeCategory && timerState === "RUNNING") {
     // Cancel current timing without recording a result
     setTimerState("IDLE");
 
-    // Reset PLL Attack sequence to the beginning
-    pllAttackIndex = 0;
-    pllAttackQueue = buildPLLAttackQueue();
-    pllAttackMode = pllAttackQueue.length > 0;
-
-    if (pllAttackMode) {
-      // Prepare first PLL algorithm for the next start
-      $('#alg-input').val(pllAttackQueue[0].algorithm);
+    // Reset Attack sequence to the beginning
+    attackIndex = 0;
+    attackQueue = attackModeCategory ? buildAttackQueue(attackModeCategory) : [];
+    if (attackQueue.length === 0) {
+      deactivateAttackMode();
+    } else {
+      $('#alg-input').val(attackQueue[0].algorithm);
     }
     return;
   }
@@ -169,8 +238,8 @@ $('#train-alg').on('click', () => {
   if (algInput) {
     inputMode = false;
     userAlg = expandNotation(algInput).split(/\s+/); // Split the input string into moves
-    if (pllAttackMode && pllAttackQueue.length > 0) {
-      currentAlgName = pllAttackQueue[pllAttackIndex]?.name || '';
+    if (attackModeCategory && attackQueue.length > 0) {
+      currentAlgName = attackQueue[attackIndex]?.name || '';
     } else {
       currentAlgName = checkedAlgorithms[0]?.name || '';
     }
@@ -557,18 +626,19 @@ async function handleMoveEvent(event: SmartCubeEvent) {
         found = true;
         badAlg = [];
         if (currentMoveIndex === userAlg.length - 1) {
-          if (pllAttackMode && pllAttackQueue.length > 0) {
-            // Completed current PLL Attack algorithm
+          if (attackModeCategory && attackQueue.length > 0) {
+            // Completed current Attack algorithm
+            const activeCategory = attackModeCategory;
             resetAlg();
 
-            // Advance to next algorithm in PLL Attack queue
-            pllAttackIndex++;
+            // Advance to next algorithm in Attack queue
+            attackIndex++;
 
-            if (pllAttackIndex < pllAttackQueue.length) {
-              const next = pllAttackQueue[pllAttackIndex];
+            if (attackIndex < attackQueue.length) {
+              const next = attackQueue[attackIndex];
               $('#alg-input').val(next.algorithm);
 
-              // Load next PLL algorithm without restarting the timer
+              // Load next algorithm without restarting the timer
               inputMode = false;
               userAlg = expandNotation(next.algorithm).split(/\s+/);
               currentAlgName = next.name || '';
@@ -585,12 +655,12 @@ async function handleMoveEvent(event: SmartCubeEvent) {
                 updateAlgDisplay();
               }
             } else {
-              // Last PLL in the list finished – stop timer and end PLL Attack mode
-              pllAttackMode = false;
-              // Mark PLL Attack session as active for STOPPED, then clear it
-              pllAttackSessionActive = true;
+              // Last alg in the list finished – stop timer and end Attack mode
+              attackModeCategory = null;
+              // Mark Attack session as active for STOPPED, then clear it
+              attackSessionCategory = activeCategory;
               setTimerState("STOPPED");
-              pllAttackSessionActive = false;
+              attackSessionCategory = null;
             }
             return;
           } else {
@@ -807,8 +877,8 @@ $('#input-alg').on('click', () => {
   $('#load-container').hide();
   $('#save-container').hide();
   $('#info').hide();
-  pllAttackMode = false;
-  $('#pll-attack-list-container').hide();
+  deactivateAttackMode();
+  hideAttackLists();
 });
 
 $('#show-help').on('click', () => {
@@ -824,8 +894,8 @@ $('#show-help').on('click', () => {
   $('#alg-name-display-container').hide();
   $('#alg-stats').hide();
   $('#alg-name-display-container').hide();
-  pllAttackMode = false;
-  $('#pll-attack-list-container').hide();
+  deactivateAttackMode();
+  hideAttackLists();
 });
 
 // Cube Menu Logic
@@ -1192,13 +1262,14 @@ $('#alg-variants-list').on('drop', '.variant-item', function (event) {
 });
 
 // ------------------------------
-// PLL Attack: default PLL alg list with drag & drop reordering
+// Attack lists (PLL & OLL) with drag & drop reordering
 // ------------------------------
 
-let pllAttackDraggedKey: string | null = null;
-let pllAttackDropAfter: boolean = false;
+let attackDraggedKey: string | null = null;
+let attackDraggedCategory: AttackCategory | null = null;
+let attackDropAfter: boolean = false;
 
-function buildPLLAttackQueue(): Algorithm[] {
+function buildAttackQueue(category: AttackCategory): Algorithm[] {
   const queue: Algorithm[] = [];
 
   const raw = localStorage.getItem('savedAlgorithms') || '{}';
@@ -1209,12 +1280,12 @@ function buildPLLAttackQueue(): Algorithm[] {
     savedAlgorithms = {};
   }
 
-  const pllCases = savedAlgorithms['PLL'] as any[] | undefined;
-  if (!pllCases || pllCases.length === 0) {
+  const cases = savedAlgorithms[category] as any[] | undefined;
+  if (!cases || cases.length === 0) {
     return queue;
   }
 
-  pllCases.forEach((caseData: any) => {
+  cases.forEach((caseData: any) => {
     if (!caseData || !Array.isArray(caseData.algorithms) || caseData.algorithms.length === 0) {
       return;
     }
@@ -1229,14 +1300,17 @@ function buildPLLAttackQueue(): Algorithm[] {
       algorithm: expandedAlg,
       name: caseData.case || '',
       bestTime: best,
+      subset: caseData.subset || '',
+      category
     });
   });
 
   return queue;
 }
 
-function renderPLLAttackList() {
-  const list = $('#pll-attack-list');
+function renderAttackList(category: AttackCategory) {
+  const config = ATTACK_CONFIG[category];
+  const list = $(config.listSelector);
   if (list.length === 0) return;
 
   list.empty();
@@ -1249,13 +1323,13 @@ function renderPLLAttackList() {
     savedAlgorithms = {};
   }
 
-  const pllCases = savedAlgorithms['PLL'] as any[] | undefined;
-  if (!pllCases || pllCases.length === 0) {
-    list.append('<div class="px-4 py-2 text-sm text-gray-500 dark:text-gray-400 italic">No PLL algorithms found.</div>');
+  const cases = savedAlgorithms[category] as any[] | undefined;
+  if (!cases || cases.length === 0) {
+    list.append(`<div class="px-4 py-2 text-sm text-gray-500 dark:text-gray-400 italic">No ${category} algorithms found.</div>`);
     return;
   }
 
-  pllCases.forEach((caseData: any) => {
+  cases.forEach((caseData: any) => {
     if (!caseData || !Array.isArray(caseData.algorithms) || caseData.algorithms.length === 0) {
       return;
     }
@@ -1269,8 +1343,9 @@ function renderPLLAttackList() {
     const algText = expandNotation(favoriteAlg.algorithm || '');
 
     list.append(`
-      <div class="pll-attack-item flex items-center justify-between px-4 py-2 cursor-move hover:bg-gray-100 dark:hover:bg-gray-700"
+      <div class="attack-item flex items-center justify-between px-4 py-2 cursor-move hover:bg-gray-100 dark:hover:bg-gray-700"
            draggable="true"
+           data-category="${category}"
            data-key="${key}"
            data-subset="${subsetLabel}"
            data-case="${caseName}">
@@ -1289,11 +1364,13 @@ function renderPLLAttackList() {
   });
 }
 
-$('#pll-attack-list').on('dragstart', '.pll-attack-item', function (event) {
+$('.attack-list').on('dragstart', '.attack-item', function (event) {
   const key = $(this).data('key') as string | undefined;
-  if (!key) return;
+  const category = $(this).data('category') as AttackCategory | undefined;
+  if (!key || !category) return;
 
-  pllAttackDraggedKey = key;
+  attackDraggedKey = key;
+  attackDraggedCategory = category;
   $(this).addClass('opacity-50');
 
   const dt = (event.originalEvent as DragEvent).dataTransfer;
@@ -1303,13 +1380,14 @@ $('#pll-attack-list').on('dragstart', '.pll-attack-item', function (event) {
   }
 });
 
-$('#pll-attack-list').on('dragend', '.pll-attack-item', function () {
-  pllAttackDraggedKey = null;
+$('.attack-list').on('dragend', '.attack-item', function () {
+  attackDraggedKey = null;
+  attackDraggedCategory = null;
   $(this).removeClass('opacity-50');
-  $('.pll-attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
+  $('.attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
 });
 
-$('#pll-attack-list').on('dragover', '.pll-attack-item', function (event) {
+$('.attack-list').on('dragover', '.attack-item', function (event) {
   event.preventDefault();
   const dt = (event.originalEvent as DragEvent).dataTransfer;
   if (dt) {
@@ -1323,32 +1401,38 @@ $('#pll-attack-list').on('dragover', '.pll-attack-item', function (event) {
   const isBefore = clientY < offsetTop + height / 2;
 
   // Visual indicator: thin blue line above or below target item
-  $('.pll-attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
+  $('.attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
   if (isBefore) {
     $item.addClass('border-t-2 border-blue-500').removeClass('border-b-2');
-    pllAttackDropAfter = false;
+    attackDropAfter = false;
   } else {
     $item.addClass('border-b-2 border-blue-500').removeClass('border-t-2');
-    pllAttackDropAfter = true;
+    attackDropAfter = true;
   }
 });
 
-$('#pll-attack-list').on('drop', '.pll-attack-item', function (event) {
+$('.attack-list').on('drop', '.attack-item', function (event) {
   event.preventDefault();
 
   const targetKey = $(this).data('key') as string | undefined;
+  const category = $(this).data('category') as AttackCategory | undefined;
   const dt = (event.originalEvent as DragEvent).dataTransfer;
-  const sourceKey = pllAttackDraggedKey || (dt ? dt.getData('text/plain') : null);
+  const sourceKey = attackDraggedKey || (dt ? dt.getData('text/plain') : null);
 
-  if (!sourceKey || !targetKey || sourceKey === targetKey) return;
+  if (!sourceKey || !targetKey || sourceKey === targetKey || !category) return;
+  if (attackDraggedCategory && attackDraggedCategory !== category) return;
 
   const [sourceSubset, sourceCase] = (sourceKey as string).split('::');
   const [targetSubset, targetCase] = (targetKey as string).split('::');
 
-  reorderCasesInCategory('PLL', sourceSubset || '', sourceCase || '', targetSubset || '', targetCase || '', pllAttackDropAfter);
-  renderPLLAttackList();
+  reorderCasesInCategory(category, sourceSubset || '', sourceCase || '', targetSubset || '', targetCase || '', attackDropAfter);
+  renderAttackList(category);
   // Clear visual indicators
-  $('.pll-attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
+  $('.attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
+  if (attackModeCategory === category) {
+    attackQueue = buildAttackQueue(category);
+    attackIndex = 0;
+  }
 });
 
 (window as any).deleteVariant = (algorithmId: string) => {
@@ -1498,8 +1582,8 @@ $('#device-info').on('click', () => {
     $('#load-container').hide();
     $('#save-container').hide();
     $('#help').hide();
-    pllAttackMode = false;
-    $('#pll-attack-list-container').hide();
+    deactivateAttackMode();
+    hideAttackLists();
   } else {
     infoDiv.css('display', 'none');
   }
@@ -1634,14 +1718,14 @@ function updateTimesDisplay() {
   const timesDisplay = $('#times-display');
   const algNameDisplay = $('#alg-name-display');
   const algNameDisplay2 = $('#alg-name-display2');
-  const isPLLSession = pllAttackSessionActive || $('#pll-attack-list-container').is(':visible');
-  const algId = isPLLSession ? 'pll-attack-session' : algToId(originalUserAlg.join(' '));
+  const attackContext = getAttackContextCategory();
+  const algId = attackContext ? ATTACK_CONFIG[attackContext].sessionId : algToId(originalUserAlg.join(' '));
 
   // Use the new function to get last times
   const lastTimes = getLastTimes(algId);
   const bestTime = bestTimeNumber(algId);
 
-  const displayName = isPLLSession ? 'PLL Attack' : currentAlgName;
+  const displayName = attackContext ? ATTACK_CONFIG[attackContext].label : currentAlgName;
   algNameDisplay.text(showAlgNameEnabled ? displayName : '');
   algNameDisplay2.text(showAlgNameEnabled ? displayName : '');
 
@@ -1706,8 +1790,8 @@ function updateTimesDisplay() {
 
 function setTimerState(state: typeof timerState) {
   timerState = state;
-  const isPLLSession = pllAttackSessionActive || $('#pll-attack-list-container').is(':visible');
-  const algId = isPLLSession ? 'pll-attack-session' : algToId(originalUserAlg.join(' '));
+  const attackContext = getAttackContextCategory();
+  const algId = attackContext ? ATTACK_CONFIG[attackContext].sessionId : algToId(originalUserAlg.join(' '));
   // check if the algId exists in the DOM, create it if it doesn't
   if ($('#' + algId).length === 0) {
     $('#default-alg-id').append(`<div id="${algId}" class="hidden"></div>`);
@@ -2241,8 +2325,7 @@ $('#load-alg').on('click', () => {
   $('#info').hide();
   $('#alg-stats').hide();
   $('#alg-name-display-container').hide();
-  pllAttackMode = false;
-  $('#pll-attack-list-container').hide();
+  hideAttackLists();
   // Ensure alg-display uses the first checked algorithm when returning to Practice
   if (checkedAlgorithms.length > 0) {
     const nextAlgorithm = refreshCheckedAlgorithmAt(0);
@@ -2253,35 +2336,9 @@ $('#load-alg').on('click', () => {
   $('#train-alg').trigger('click');
 });
 
-// Event listener for PLL Attack button – same layout as Practice, but without the alg list
-$('#pll-attack').on('click', () => {
-  resetTimerForModeSwitch();
-  $('#top-row').show();
-  $('#main-column').show();
-  $('#app-top').show();
-  $('#load-container').hide();
-  $('#save-container').hide();
-  $('#options-container').hide();
-  $('#help').hide();
-  $('#info').hide();
-  $('#alg-stats').hide();
-  $('#alg-name-display-container').hide();
-
-  // Build PLL Attack queue from current PLL order
-  pllAttackQueue = buildPLLAttackQueue();
-  pllAttackIndex = 0;
-  pllAttackMode = pllAttackQueue.length > 0;
-
-  // Show PLL Attack order list
-  $('#pll-attack-list-container').show();
-  renderPLLAttackList();
-
-  if (pllAttackMode) {
-    // Set first PLL algorithm into input and start training
-    $('#alg-input').val(pllAttackQueue[0].algorithm);
-    $('#train-alg').trigger('click');
-  }
-});
+// Event listeners for Attack buttons (PLL & OLL)
+$('#pll-attack').on('click', () => openAttackScreen('PLL'));
+$('#oll-attack').on('click', () => openAttackScreen('OLL'));
 
 // Event listener for Save button
 $('#save-alg').on('click', () => {
@@ -2306,8 +2363,8 @@ $('#save-alg').on('click', () => {
   $('#options-container').hide();
   $('#help').hide();
   $('#info').hide();
-  pllAttackMode = false;
-  $('#pll-attack-list-container').hide();
+  deactivateAttackMode();
+  hideAttackLists();
 });
 
 function populateSaveFormHelpers() {
@@ -2373,7 +2430,7 @@ function resetDrill() {
   $('#alg-input').show();
   $('#alg-stats').hide();
   $('#alg-name-display-container').hide();
-  pllAttackMode = false;
+  deactivateAttackMode();
 }
 
 // Event listener for Category select change
@@ -2442,7 +2499,7 @@ $('#show-options').on('click', () => {
   $('#help').hide();
   $('#alg-stats').hide();
   $('#left-side-inner').hide();
-  $('#pll-attack-list-container').hide();
+  hideAttackLists();
   $('#options-container').show();
 });
 
