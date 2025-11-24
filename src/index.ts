@@ -147,6 +147,25 @@ let attackIndex: number = 0;
 let attackSessionCategory: AttackCategory | null = null;
 let visibleAttackScreen: AttackCategory | null = null;
 
+const ATTACK_ROTATION_MOVES = new Set(['y', "y'", 'y2']);
+
+function stripOuterAttackRotations(alg: string): string {
+  const tokens = alg.split(/\s+/).filter(Boolean);
+  while (tokens.length > 0 && ATTACK_ROTATION_MOVES.has(tokens[0])) {
+    tokens.shift();
+  }
+  while (tokens.length > 0 && ATTACK_ROTATION_MOVES.has(tokens[tokens.length - 1])) {
+    tokens.pop();
+  }
+  return tokens.join(' ');
+}
+
+function formatAttackAlgorithm(rawAlg: string): string {
+  const expanded = expandNotation(rawAlg || '');
+  const trimmed = stripOuterAttackRotations(expanded);
+  return trimmed.length > 0 ? trimmed : expanded;
+}
+
 function hideAttackLists() {
   Object.values(ATTACK_CONFIG).forEach(cfg => $(cfg.listContainer).hide());
   visibleAttackScreen = null;
@@ -1292,12 +1311,12 @@ function buildAttackQueue(category: AttackCategory): Algorithm[] {
     const favoriteAlg = caseData.algorithms.find((a: any) => a.isFavorite) || caseData.algorithms[0];
     if (!favoriteAlg) return;
 
-    const expandedAlg = expandNotation(favoriteAlg.algorithm || '');
-    const algId = algToId(expandedAlg);
+    const attackAlgorithm = formatAttackAlgorithm(favoriteAlg.algorithm || '');
+    const algId = algToId(attackAlgorithm);
     const best = bestTimeNumber(algId) || 0;
 
     queue.push({
-      algorithm: expandedAlg,
+      algorithm: attackAlgorithm,
       name: caseData.case || '',
       bestTime: best,
       subset: caseData.subset || '',
@@ -1340,7 +1359,7 @@ function renderAttackList(category: AttackCategory) {
     const key = `${caseData.subset || ''}::${caseData.case || ''}`;
     const subsetLabel = caseData.subset || '';
     const caseName = caseData.case || '';
-    const algText = expandNotation(favoriteAlg.algorithm || '');
+    const algText = formatAttackAlgorithm(favoriteAlg.algorithm || '');
 
     list.append(`
       <div class="attack-item flex items-center justify-between px-4 py-2 cursor-move hover:bg-gray-100 dark:hover:bg-gray-700"
