@@ -581,6 +581,41 @@ export function reorderAlgorithmVariants(
   localStorage.setItem('savedAlgorithms', JSON.stringify(savedAlgorithms));
 }
 
+// Function to reorder whole cases within a category (used for PLL Attack order)
+export function reorderCasesInCategory(
+  category: string,
+  sourceSubset: string,
+  sourceCaseName: string,
+  targetSubset: string,
+  targetCaseName: string,
+  placeAfter: boolean = false
+) {
+  const savedAlgorithms = JSON.parse(localStorage.getItem('savedAlgorithms') || '{}');
+  const categoryData = savedAlgorithms[category];
+  if (!Array.isArray(categoryData)) return;
+
+  const fromIndex = categoryData.findIndex((c: any) => c.subset === sourceSubset && c.case === sourceCaseName);
+  const toIndex = categoryData.findIndex((c: any) => c.subset === targetSubset && c.case === targetCaseName);
+
+  if (fromIndex === -1 || toIndex === -1 || fromIndex === toIndex) {
+    return;
+  }
+
+  const [moved] = categoryData.splice(fromIndex, 1);
+  // Recompute target index after removal
+  const newTargetIndex = categoryData.findIndex((c: any) => c.subset === targetSubset && c.case === targetCaseName);
+  if (newTargetIndex === -1) {
+    // Fallback: append at the end if target not found for some reason
+    categoryData.push(moved);
+  } else {
+    const insertIndex = placeAfter ? newTargetIndex + 1 : newTargetIndex;
+    categoryData.splice(insertIndex, 0, moved);
+  }
+
+  savedAlgorithms[category] = categoryData;
+  localStorage.setItem('savedAlgorithms', JSON.stringify(savedAlgorithms));
+}
+
 // Function to delete an algorithm from localStorage
 export function deleteAlgorithm(category: string, algorithm: string) {
   const savedAlgorithms = JSON.parse(localStorage.getItem('savedAlgorithms') || '{}');

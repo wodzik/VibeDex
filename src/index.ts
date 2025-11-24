@@ -31,7 +31,7 @@ import { Moyu32CubeConnection } from './lib/smartcube/Moyu32Cube';
 import { cubeManager, SavedCube } from './lib/smartcube/CubeManager';
 
 import { faceletsToPattern, patternToFacelets } from './utils';
-import { expandNotation, fixOrientation, getInverseMove, getOppositeMove, releaseWakeLock, initializeDefaultAlgorithms, saveAlgorithm, deleteAlgorithm, exportAlgorithms, importAlgorithms, loadAlgorithms, loadCategories, isSymmetricOLL, algToId, setStickering, loadSubsets, bestTimeString, bestTimeNumber, averageTimeString, averageOfFiveTimeNumber, learnedStatus, createTimeGraph, createStatsGraph, countMovesETM, getLastTimes, reorderAlgorithmVariants, updateAlgorithmVariant } from './functions';
+import { expandNotation, fixOrientation, getInverseMove, getOppositeMove, releaseWakeLock, initializeDefaultAlgorithms, saveAlgorithm, deleteAlgorithm, exportAlgorithms, importAlgorithms, loadAlgorithms, loadCategories, isSymmetricOLL, algToId, setStickering, loadSubsets, bestTimeString, bestTimeNumber, averageTimeString, averageOfFiveTimeNumber, learnedStatus, createTimeGraph, createStatsGraph, countMovesETM, getLastTimes, reorderAlgorithmVariants, updateAlgorithmVariant, reorderCasesInCategory } from './functions';
 import { extractYouTubeEmbedUrl } from './videoHelpers';
 
 const SOLVED_STATE = "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB";
@@ -124,6 +124,12 @@ var currentMoveIndex = 0;
 var inputMode: boolean = true;
 var scrambleMode: boolean = false;
 
+// PLL Attack mode state
+let pllAttackMode: boolean = false;
+let pllAttackQueue: Algorithm[] = [];
+let pllAttackIndex: number = 0;
+let pllAttackSessionActive: boolean = false;
+
 function resetAlg() {
   currentMoveIndex = -1; // Reset the move index
   badAlg = [];
@@ -131,11 +137,33 @@ function resetAlg() {
 }
 
 $('#train-alg').on('click', () => {
+  // Special handling: if we're in PLL Attack mode and timer is running,
+  // treat clicking the button as a manual STOP that resets the whole attack.
+  if (pllAttackMode && timerState === "RUNNING") {
+    // Stop current timing (records partial PLL Attack session time under pll-attack-session)
+    setTimerState("STOPPED");
+
+    // Reset PLL Attack sequence to the beginning
+    pllAttackIndex = 0;
+    pllAttackQueue = buildPLLAttackQueue();
+    pllAttackMode = pllAttackQueue.length > 0;
+
+    if (pllAttackMode) {
+      // Prepare first PLL algorithm for the next start
+      $('#alg-input').val(pllAttackQueue[0].algorithm);
+    }
+    return;
+  }
+
   const algInput = $('#alg-input').val()?.toString().trim();
   if (algInput) {
     inputMode = false;
     userAlg = expandNotation(algInput).split(/\s+/); // Split the input string into moves
-    currentAlgName = checkedAlgorithms[0]?.name || '';
+    if (pllAttackMode && pllAttackQueue.length > 0) {
+      currentAlgName = pllAttackQueue[pllAttackIndex]?.name || '';
+    } else {
+      currentAlgName = checkedAlgorithms[0]?.name || '';
+    }
     $('#alg-display').text(userAlg.join(' ')); // Display the alg
     $('#alg-display-container').show();
     $('#timer').show();
@@ -512,28 +540,70 @@ async function handleMoveEvent(event: SmartCubeEvent) {
     // Check if the current move matches the user's alg
     var found: boolean = false;
     patternStates.forEach((pattern, index) => {
-      if (myKpattern.applyMove(move).isIdentical(pattern) || (isBugged && myKpattern.isIdentical(pattern))) {
+      // In PLL Attack mode, use stricter matching (no isBugged shortcut),
+      // to avoid edge cases when an algorithm ends and the next begins with the same face move.
+      const matchesPattern = pllAttackMode
+        ? myKpattern.applyMove(move).isIdentical(pattern)
+        : (myKpattern.applyMove(move).isIdentical(pattern) || (isBugged && myKpattern.isIdentical(pattern)));
+
+      if (matchesPattern) {
         isBugged = false;
         currentMoveIndex = index;
         found = true;
         badAlg = [];
         if (currentMoveIndex === userAlg.length - 1) {
-          setTimerState("STOPPED");
-          resetAlg();
-          fetchNextPatterns();
-          currentMoveIndex = userAlg.length - 1;
+          if (pllAttackMode && pllAttackQueue.length > 0) {
+            // Completed current PLL Attack algorithm
+            resetAlg();
 
-          // Switch to next algorithm
-          switchToNextAlgorithm();
+            // Advance to next algorithm in PLL Attack queue
+            pllAttackIndex++;
 
-          // this is the initial state for the new algorithm
-          initialstate = pattern;
-          keepInitialState = true;
-          if (checkedAlgorithms.length > 0) {
-            $('#alg-input').val(checkedAlgorithms[0].algorithm);
+            if (pllAttackIndex < pllAttackQueue.length) {
+              const next = pllAttackQueue[pllAttackIndex];
+              $('#alg-input').val(next.algorithm);
+
+              // Load next PLL algorithm without restarting the timer
+              inputMode = false;
+              userAlg = expandNotation(next.algorithm).split(/\s+/);
+              currentAlgName = next.name || '';
+              $('#alg-display').text(userAlg.join(' '));
+              $('#alg-display-container').show();
+              hideMistakes();
+              hasFailedAlg = false;
+              patternStates = [];
+              algPatternStates = [];
+              fetchNextPatterns();
+              if ($('#alg-display').text() !== '') {
+                updateAlgDisplay();
+              }
+            } else {
+              // Last PLL in the list finished – stop timer and end PLL Attack mode
+              pllAttackMode = false;
+              // Mark PLL Attack session as active for STOPPED, then clear it
+              pllAttackSessionActive = true;
+              setTimerState("STOPPED");
+              pllAttackSessionActive = false;
+            }
+            return;
+          } else {
+            setTimerState("STOPPED");
+            resetAlg();
+            fetchNextPatterns();
+            currentMoveIndex = userAlg.length - 1;
+
+            // Switch to next algorithm
+            switchToNextAlgorithm();
+
+            // this is the initial state for the new algorithm
+            initialstate = pattern;
+            keepInitialState = true;
+            if (checkedAlgorithms.length > 0) {
+              $('#alg-input').val(checkedAlgorithms[0].algorithm);
+            }
+            $('#train-alg').trigger('click');
+            return;
           }
-          $('#train-alg').trigger('click');
-          return;
         }
         return;
       }
@@ -727,6 +797,8 @@ $('#input-alg').on('click', () => {
   $('#load-container').hide();
   $('#save-container').hide();
   $('#info').hide();
+  pllAttackMode = false;
+  $('#pll-attack-list-container').hide();
 });
 
 $('#show-help').on('click', () => {
@@ -742,6 +814,8 @@ $('#show-help').on('click', () => {
   $('#alg-name-display-container').hide();
   $('#alg-stats').hide();
   $('#alg-name-display-container').hide();
+  pllAttackMode = false;
+  $('#pll-attack-list-container').hide();
 });
 
 // Cube Menu Logic
@@ -1107,6 +1181,166 @@ $('#alg-variants-list').on('drop', '.variant-item', function (event) {
   openVariantsModal(category, subset, caseName);
 });
 
+// ------------------------------
+// PLL Attack: default PLL alg list with drag & drop reordering
+// ------------------------------
+
+let pllAttackDraggedKey: string | null = null;
+let pllAttackDropAfter: boolean = false;
+
+function buildPLLAttackQueue(): Algorithm[] {
+  const queue: Algorithm[] = [];
+
+  const raw = localStorage.getItem('savedAlgorithms') || '{}';
+  let savedAlgorithms: any = {};
+  try {
+    savedAlgorithms = JSON.parse(raw);
+  } catch {
+    savedAlgorithms = {};
+  }
+
+  const pllCases = savedAlgorithms['PLL'] as any[] | undefined;
+  if (!pllCases || pllCases.length === 0) {
+    return queue;
+  }
+
+  pllCases.forEach((caseData: any) => {
+    if (!caseData || !Array.isArray(caseData.algorithms) || caseData.algorithms.length === 0) {
+      return;
+    }
+    const favoriteAlg = caseData.algorithms.find((a: any) => a.isFavorite) || caseData.algorithms[0];
+    if (!favoriteAlg) return;
+
+    const expandedAlg = expandNotation(favoriteAlg.algorithm || '');
+    const algId = algToId(expandedAlg);
+    const best = bestTimeNumber(algId) || 0;
+
+    queue.push({
+      algorithm: expandedAlg,
+      name: caseData.case || '',
+      bestTime: best,
+    });
+  });
+
+  return queue;
+}
+
+function renderPLLAttackList() {
+  const list = $('#pll-attack-list');
+  if (list.length === 0) return;
+
+  list.empty();
+
+  const raw = localStorage.getItem('savedAlgorithms') || '{}';
+  let savedAlgorithms: any = {};
+  try {
+    savedAlgorithms = JSON.parse(raw);
+  } catch {
+    savedAlgorithms = {};
+  }
+
+  const pllCases = savedAlgorithms['PLL'] as any[] | undefined;
+  if (!pllCases || pllCases.length === 0) {
+    list.append('<div class="px-4 py-2 text-sm text-gray-500 dark:text-gray-400 italic">No PLL algorithms found.</div>');
+    return;
+  }
+
+  pllCases.forEach((caseData: any) => {
+    if (!caseData || !Array.isArray(caseData.algorithms) || caseData.algorithms.length === 0) {
+      return;
+    }
+
+    const favoriteAlg = caseData.algorithms.find((a: any) => a.isFavorite) || caseData.algorithms[0];
+    if (!favoriteAlg) return;
+
+    const key = `${caseData.subset || ''}::${caseData.case || ''}`;
+    const subsetLabel = caseData.subset || '';
+    const caseName = caseData.case || '';
+    const algText = expandNotation(favoriteAlg.algorithm || '');
+
+    list.append(`
+      <div class="pll-attack-item flex items-center justify-between px-4 py-2 cursor-move hover:bg-gray-100 dark:hover:bg-gray-700"
+           draggable="true"
+           data-key="${key}"
+           data-subset="${subsetLabel}"
+           data-case="${caseName}">
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2">
+            <span class="font-semibold truncate">${caseName}</span>
+            ${subsetLabel ? `<span class="text-[10px] px-2 py-0.5 rounded-full bg-blue-500 text-white uppercase tracking-wide">${subsetLabel}</span>` : ''}
+          </div>
+          <div class="mt-1 text-[11px] font-mono text-gray-700 dark:text-gray-300 break-all">${algText}</div>
+        </div>
+        <div class="ml-3 text-gray-400 dark:text-gray-500 flex items-center justify-center">
+          &#9776;
+        </div>
+      </div>
+    `);
+  });
+}
+
+$('#pll-attack-list').on('dragstart', '.pll-attack-item', function (event) {
+  const key = $(this).data('key') as string | undefined;
+  if (!key) return;
+
+  pllAttackDraggedKey = key;
+  $(this).addClass('opacity-50');
+
+  const dt = (event.originalEvent as DragEvent).dataTransfer;
+  if (dt) {
+    dt.effectAllowed = 'move';
+    dt.setData('text/plain', key);
+  }
+});
+
+$('#pll-attack-list').on('dragend', '.pll-attack-item', function () {
+  pllAttackDraggedKey = null;
+  $(this).removeClass('opacity-50');
+  $('.pll-attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
+});
+
+$('#pll-attack-list').on('dragover', '.pll-attack-item', function (event) {
+  event.preventDefault();
+  const dt = (event.originalEvent as DragEvent).dataTransfer;
+  if (dt) {
+    dt.dropEffect = 'move';
+  }
+
+  const $item = $(this);
+  const offsetTop = $item.offset()?.top ?? 0;
+  const height = $item.outerHeight() ?? 0;
+  const clientY = (event.originalEvent as DragEvent).clientY;
+  const isBefore = clientY < offsetTop + height / 2;
+
+  // Visual indicator: thin blue line above or below target item
+  $('.pll-attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
+  if (isBefore) {
+    $item.addClass('border-t-2 border-blue-500').removeClass('border-b-2');
+    pllAttackDropAfter = false;
+  } else {
+    $item.addClass('border-b-2 border-blue-500').removeClass('border-t-2');
+    pllAttackDropAfter = true;
+  }
+});
+
+$('#pll-attack-list').on('drop', '.pll-attack-item', function (event) {
+  event.preventDefault();
+
+  const targetKey = $(this).data('key') as string | undefined;
+  const dt = (event.originalEvent as DragEvent).dataTransfer;
+  const sourceKey = pllAttackDraggedKey || (dt ? dt.getData('text/plain') : null);
+
+  if (!sourceKey || !targetKey || sourceKey === targetKey) return;
+
+  const [sourceSubset, sourceCase] = (sourceKey as string).split('::');
+  const [targetSubset, targetCase] = (targetKey as string).split('::');
+
+  reorderCasesInCategory('PLL', sourceSubset || '', sourceCase || '', targetSubset || '', targetCase || '', pllAttackDropAfter);
+  renderPLLAttackList();
+  // Clear visual indicators
+  $('.pll-attack-item').removeClass('border-t-2 border-b-2 border-blue-500');
+});
+
 (window as any).deleteVariant = (algorithmId: string) => {
   if (!currentVariantsCase) return;
   if (!confirm('Delete this algorithm variant?')) return;
@@ -1254,6 +1488,8 @@ $('#device-info').on('click', () => {
     $('#load-container').hide();
     $('#save-container').hide();
     $('#help').hide();
+    pllAttackMode = false;
+    $('#pll-attack-list-container').hide();
   } else {
     infoDiv.css('display', 'none');
   }
@@ -1388,14 +1624,16 @@ function updateTimesDisplay() {
   const timesDisplay = $('#times-display');
   const algNameDisplay = $('#alg-name-display');
   const algNameDisplay2 = $('#alg-name-display2');
-  const algId = algToId(originalUserAlg.join(' '));
+  const isPLLSession = pllAttackSessionActive || $('#pll-attack-list-container').is(':visible');
+  const algId = isPLLSession ? 'pll-attack-session' : algToId(originalUserAlg.join(' '));
 
   // Use the new function to get last times
   const lastTimes = getLastTimes(algId);
   const bestTime = bestTimeNumber(algId);
 
-  algNameDisplay.text(showAlgNameEnabled ? currentAlgName : '');
-  algNameDisplay2.text(showAlgNameEnabled ? currentAlgName : '');
+  const displayName = isPLLSession ? 'PLL Attack' : currentAlgName;
+  algNameDisplay.text(showAlgNameEnabled ? displayName : '');
+  algNameDisplay2.text(showAlgNameEnabled ? displayName : '');
 
   createTimeGraph(lastTimes.slice(-5));
   createStatsGraph(lastTimes);
@@ -1458,7 +1696,8 @@ function updateTimesDisplay() {
 
 function setTimerState(state: typeof timerState) {
   timerState = state;
-  const algId = algToId(originalUserAlg.join(' '));
+  const isPLLSession = pllAttackSessionActive || $('#pll-attack-list-container').is(':visible');
+  const algId = isPLLSession ? 'pll-attack-session' : algToId(originalUserAlg.join(' '));
   // check if the algId exists in the DOM, create it if it doesn't
   if ($('#' + algId).length === 0) {
     $('#default-alg-id').append(`<div id="${algId}" class="hidden"></div>`);
@@ -1903,7 +2142,7 @@ $('#scramble-to').on('click', () => {
   })();
 });
 
-// Event listener for Load button
+// Event listener for Load (Practice) button
 $('#load-alg').on('click', () => {
   $('#top-row').show();
   $('#main-column').show();
@@ -1919,7 +2158,42 @@ $('#load-alg').on('click', () => {
   $('#info').hide();
   $('#alg-stats').hide();
   $('#alg-name-display-container').hide();
+  pllAttackMode = false;
+  $('#pll-attack-list-container').hide();
+  // Ensure alg-display uses the first checked algorithm when returning to Practice
+  if (checkedAlgorithms.length > 0) {
+    $('#alg-input').val(checkedAlgorithms[0].algorithm);
+  }
   $('#train-alg').trigger('click');
+});
+
+// Event listener for PLL Attack button – same layout as Practice, but without the alg list
+$('#pll-attack').on('click', () => {
+  $('#top-row').show();
+  $('#main-column').show();
+  $('#app-top').show();
+  $('#load-container').hide();
+  $('#save-container').hide();
+  $('#options-container').hide();
+  $('#help').hide();
+  $('#info').hide();
+  $('#alg-stats').hide();
+  $('#alg-name-display-container').hide();
+
+  // Build PLL Attack queue from current PLL order
+  pllAttackQueue = buildPLLAttackQueue();
+  pllAttackIndex = 0;
+  pllAttackMode = pllAttackQueue.length > 0;
+
+  // Show PLL Attack order list
+  $('#pll-attack-list-container').show();
+  renderPLLAttackList();
+
+  if (pllAttackMode) {
+    // Set first PLL algorithm into input and start training
+    $('#alg-input').val(pllAttackQueue[0].algorithm);
+    $('#train-alg').trigger('click');
+  }
 });
 
 // Event listener for Save button
@@ -1945,6 +2219,8 @@ $('#save-alg').on('click', () => {
   $('#options-container').hide();
   $('#help').hide();
   $('#info').hide();
+  pllAttackMode = false;
+  $('#pll-attack-list-container').hide();
 });
 
 function populateSaveFormHelpers() {
@@ -2010,6 +2286,7 @@ function resetDrill() {
   $('#alg-input').show();
   $('#alg-stats').hide();
   $('#alg-name-display-container').hide();
+  pllAttackMode = false;
 }
 
 // Event listener for Category select change
@@ -2078,6 +2355,7 @@ $('#show-options').on('click', () => {
   $('#help').hide();
   $('#alg-stats').hide();
   $('#left-side-inner').hide();
+  $('#pll-attack-list-container').hide();
   $('#options-container').show();
 });
 
