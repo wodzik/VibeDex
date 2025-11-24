@@ -821,7 +821,7 @@ export function loadAlgorithms(category: string) {
               </div>
               <div class="grid grid-cols-2 mt-1 relative z-10">
                   <label for="case-toggle-${algId}" class="cursor-pointer relative inline-block">
-                    <input type="checkbox" id="case-toggle-${algId}" class="sr-only" data-algorithm="${algorithm}" data-name="${caseName}" data-best="${bestTime}" />
+                    <input type="checkbox" id="case-toggle-${algId}" class="sr-only" data-algorithm="${algorithm}" data-name="${caseName}" data-best="${bestTime}" data-subset="${subset}" data-category="${category}" />
                     <div class="w-11 h-6 bg-gray-200 rounded-full shadow-inner"></div>
                     <div class="dot absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transition-transform duration-200 ease-in-out"></div>
                   </label>

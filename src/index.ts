@@ -136,12 +136,22 @@ function resetAlg() {
   hideMistakes();
 }
 
+function resetTimerForModeSwitch() {
+  if (timerState !== "IDLE") {
+    setTimerState("IDLE");
+  }
+  solutionMoves = [];
+  currentTimerValue = 0;
+  $('#timer').text('').hide();
+}
+
 $('#train-alg').on('click', () => {
   // Special handling: if we're in PLL Attack mode and timer is running,
-  // treat clicking the button as a manual STOP that resets the whole attack.
+  // treat clicking the button as a manual STOP that resets the whole attack
+  // WITHOUT saving a time for the PLL Attack session.
   if (pllAttackMode && timerState === "RUNNING") {
-    // Stop current timing (records partial PLL Attack session time under pll-attack-session)
-    setTimerState("STOPPED");
+    // Cancel current timing without recording a result
+    setTimerState("IDLE");
 
     // Reset PLL Attack sequence to the beginning
     pllAttackIndex = 0;
@@ -540,13 +550,8 @@ async function handleMoveEvent(event: SmartCubeEvent) {
     // Check if the current move matches the user's alg
     var found: boolean = false;
     patternStates.forEach((pattern, index) => {
-      // In PLL Attack mode, use stricter matching (no isBugged shortcut),
-      // to avoid edge cases when an algorithm ends and the next begins with the same face move.
-      const matchesPattern = pllAttackMode
-        ? myKpattern.applyMove(move).isIdentical(pattern)
-        : (myKpattern.applyMove(move).isIdentical(pattern) || (isBugged && myKpattern.isIdentical(pattern)));
-
-      if (matchesPattern) {
+      // Use the same matching logic as in normal practice mode
+      if (myKpattern.applyMove(move).isIdentical(pattern) || (isBugged && myKpattern.isIdentical(pattern))) {
         isBugged = false;
         currentMoveIndex = index;
         found = true;
@@ -573,6 +578,8 @@ async function handleMoveEvent(event: SmartCubeEvent) {
               hasFailedAlg = false;
               patternStates = [];
               algPatternStates = [];
+              initialstate = pattern;
+              keepInitialState = true;
               fetchNextPatterns();
               if ($('#alg-display').text() !== '') {
                 updateAlgDisplay();
@@ -599,7 +606,10 @@ async function handleMoveEvent(event: SmartCubeEvent) {
             initialstate = pattern;
             keepInitialState = true;
             if (checkedAlgorithms.length > 0) {
-              $('#alg-input').val(checkedAlgorithms[0].algorithm);
+              const nextAlgorithm = refreshCheckedAlgorithmAt(0);
+              if (nextAlgorithm) {
+                $('#alg-input').val(nextAlgorithm);
+              }
             }
             $('#train-alg').trigger('click');
             return;
@@ -1794,7 +1804,10 @@ function setTimerState(state: typeof timerState) {
         if (!conn) {
           switchToNextAlgorithm();
           if (checkedAlgorithms.length > 0) {
-            $('#alg-input').val(checkedAlgorithms[0].algorithm);
+            const nextAlgorithm = refreshCheckedAlgorithmAt(0);
+            if (nextAlgorithm) {
+              $('#alg-input').val(nextAlgorithm);
+            }
           }
           $('#train-alg').trigger('click');
         }
@@ -1850,19 +1863,82 @@ interface Algorithm {
   algorithm: string;
   name: string;
   bestTime: number;
+  subset?: string;
+  category?: string;
 }
 
 let checkedAlgorithms: Algorithm[] = [];
 let checkedAlgorithmsCopy: Algorithm[] = [];
 let currentAlgName: string = '';
 
+function resolveFavoriteAlgorithmForCase(
+  category?: string,
+  subset?: string,
+  caseName?: string
+): { algorithm: string; bestTime: number } | null {
+  if (!category || !subset || !caseName) {
+    return null;
+  }
+
+  const raw = localStorage.getItem('savedAlgorithms') || '{}';
+  let savedAlgorithms: any = {};
+  try {
+    savedAlgorithms = JSON.parse(raw);
+  } catch {
+    return null;
+  }
+
+  const cases = savedAlgorithms[category];
+  if (!Array.isArray(cases)) {
+    return null;
+  }
+
+  const caseData = cases.find((c: any) => c.subset === subset && c.case === caseName);
+  if (!caseData || !Array.isArray(caseData.algorithms) || caseData.algorithms.length === 0) {
+    return null;
+  }
+
+  const favoriteAlg = caseData.algorithms.find((a: any) => a.isFavorite) || caseData.algorithms[0];
+  if (!favoriteAlg || !favoriteAlg.algorithm) {
+    return null;
+  }
+
+  const expandedAlg = expandNotation(favoriteAlg.algorithm);
+  const algId = algToId(expandedAlg);
+  const best = bestTimeNumber(algId) || 0;
+  return { algorithm: expandedAlg, bestTime: best };
+}
+
+function refreshCheckedAlgorithmAt(index: number): string | null {
+  const entry = checkedAlgorithms[index];
+  if (!entry) return null;
+
+  const resolved = resolveFavoriteAlgorithmForCase(entry.category, entry.subset, entry.name);
+  if (resolved) {
+    entry.algorithm = resolved.algorithm;
+    entry.bestTime = resolved.bestTime;
+    return entry.algorithm;
+  }
+
+  return entry.algorithm || null;
+}
+
 // Collect checked algorithms using event delegation
 $('#alg-cases').on('change', 'input[type="checkbox"]', function () {
   const algorithm = $(this).data('algorithm');
   const name = $(this).data('name');
-  const bestTime = $(this).data('best');
+  const bestTime = Number($(this).data('best') ?? 0);
+  const subset = $(this).data('subset');
+  const category = $(this).data('category');
   if ((this as HTMLInputElement).checked) {
-    const currentAlg: Algorithm = { algorithm, name, bestTime };
+    const favorite = resolveFavoriteAlgorithmForCase(category, subset, name);
+    const currentAlg: Algorithm = {
+      algorithm: favorite?.algorithm || algorithm,
+      name,
+      bestTime: favorite?.bestTime ?? bestTime ?? 0,
+      subset,
+      category
+    };
     if (prioritizeSlowAlgs) {
       const index = (!bestTime)
         ? checkedAlgorithms.reduceRight((lastIndex, alg, i) => !alg.bestTime ? lastIndex : i, -1)
@@ -1876,14 +1952,20 @@ $('#alg-cases').on('change', 'input[type="checkbox"]', function () {
       checkedAlgorithms.push(currentAlg);
     }
   } else {
-    // remove all occurrences of this algorithm from checkedAlgorithms and checkedAlgorithmsCopy
-    checkedAlgorithms = checkedAlgorithms.filter(alg => alg.algorithm !== algorithm || alg.name !== name);
-    checkedAlgorithmsCopy = checkedAlgorithmsCopy.filter(alg => alg.algorithm !== algorithm || alg.name !== name);
+    // remove all occurrences of this case from checkedAlgorithms and checkedAlgorithmsCopy
+    checkedAlgorithms = checkedAlgorithms.filter(alg => !(alg.name === name && alg.subset === subset && alg.category === category));
+    checkedAlgorithmsCopy = checkedAlgorithmsCopy.filter(alg => !(alg.name === name && alg.subset === subset && alg.category === category));
   }
   if (checkedAlgorithms.length > 0) {
-    $('#alg-input').val(checkedAlgorithms[0].algorithm);
-    if (algorithm === checkedAlgorithms[0].algorithm) {
-      $('#train-alg').trigger('click');
+    const nextAlgorithm = refreshCheckedAlgorithmAt(0);
+    if (nextAlgorithm) {
+      $('#alg-input').val(nextAlgorithm);
+      const isSameCase = checkedAlgorithms[0].name === name
+        && checkedAlgorithms[0].subset === subset
+        && checkedAlgorithms[0].category === category;
+      if (isSameCase) {
+        $('#train-alg').trigger('click');
+      }
     }
     // if the checkbox has been unchecked trigger a click on the train button
     if (!((this as HTMLInputElement).checked)) {
@@ -2144,6 +2226,7 @@ $('#scramble-to').on('click', () => {
 
 // Event listener for Load (Practice) button
 $('#load-alg').on('click', () => {
+  resetTimerForModeSwitch();
   $('#top-row').show();
   $('#main-column').show();
   $('#app-top').show();
@@ -2162,13 +2245,17 @@ $('#load-alg').on('click', () => {
   $('#pll-attack-list-container').hide();
   // Ensure alg-display uses the first checked algorithm when returning to Practice
   if (checkedAlgorithms.length > 0) {
-    $('#alg-input').val(checkedAlgorithms[0].algorithm);
+    const nextAlgorithm = refreshCheckedAlgorithmAt(0);
+    if (nextAlgorithm) {
+      $('#alg-input').val(nextAlgorithm);
+    }
   }
   $('#train-alg').trigger('click');
 });
 
 // Event listener for PLL Attack button – same layout as Practice, but without the alg list
 $('#pll-attack').on('click', () => {
+  resetTimerForModeSwitch();
   $('#top-row').show();
   $('#main-column').show();
   $('#app-top').show();
