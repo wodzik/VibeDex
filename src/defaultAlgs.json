@@ -5,7 +5,8 @@
       "algorithms": [
         {
           "name": "Aa Perm",
-          "algorithm": "x R' U R' D2 R U' R' D2 R2 x'"
+          "algorithm": "x R' U R' D2 R U' R' D2 R2 x'",
+          "youtube_link": "https://www.youtube.com/watch?v=ibDaGbBp1wY"
         },
         {
           "name": "Aa Perm",
@@ -21,7 +22,8 @@
         },
         {
           "name": "Ab Perm",
-          "algorithm": "x R2 D2 R U R' D2 R U' R x'"
+          "algorithm": "x R2 D2 R U R' D2 R U' R x'",
+          "youtube_link": "https://www.youtube.com/watch?v=Nd0NvF4PF-g"
         },
         {
           "name": "Ab Perm",
@@ -37,7 +39,8 @@
         },
         {
           "name": "F Perm",
-          "algorithm": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R"
+          "algorithm": "R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=KLL-Qt9Lm90"
         },
         {
           "name": "F Perm",
@@ -53,7 +56,8 @@
         },
         {
           "name": "Ga Perm",
-          "algorithm": "R2 U R' U R' U' R U' R2 D U' R' U R D'"
+          "algorithm": "R2 U R' U R' U' R U' R2 D U' R' U R D'",
+          "youtube_link": "https://www.youtube.com/watch?v=wd4gd8B7QSA"
         },
         {
           "name": "Ga Perm",
@@ -69,7 +73,8 @@
         },
         {
           "name": "Gb Perm",
-          "algorithm": "D R' U' R U D' R2 U R' U R U' R U' R2"
+          "algorithm": "D R' U' R U D' R2 U R' U R U' R U' R2",
+          "youtube_link": "https://www.youtube.com/watch?v=8fJRWcKSMUk"
         },
         {
           "name": "Gb Perm",
@@ -85,7 +90,8 @@
         },
         {
           "name": "Gc Perm",
-          "algorithm": "R2 U' R U' R U R' U R2 D' U R U' R' D"
+          "algorithm": "R2 U' R U' R U R' U R2 D' U R U' R' D",
+          "youtube_link": "https://www.youtube.com/watch?v=L8C6nY-Qy3E"
         },
         {
           "name": "Gc Perm",
@@ -105,7 +111,8 @@
         },
         {
           "name": "Gd Perm",
-          "algorithm": "D' R U R' U' D R2 U' R U' R' U R' U R2"
+          "algorithm": "D' R U R' U' D R2 U' R U' R' U R' U R2",
+          "youtube_link": "https://www.youtube.com/watch?v=ESv6a7Cid6c"
         },
         {
           "name": "Gd Perm",
@@ -133,11 +140,13 @@
         },
         {
           "name": "Jb Perm",
-          "algorithm": "R U R' F' R U R' U' R' F R2 U' R'"
+          "algorithm": "R U R' F' R U R' U' R' F R2 U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=QXIIxGzMftw"
         },
         {
           "name": "Jb Perm",
-          "algorithm": "R U2 R' U' R U2 L' U R' U' L"
+          "algorithm": "R U2 R' U' R U2 L' U R' U' L",
+          "youtube_link": "https://www.youtube.com/watch?v=LG79DHx4uvE"
         },
         {
           "name": "Jb Perm",
@@ -165,7 +174,8 @@
         },
         {
           "name": "Rb Perm",
-          "algorithm": "R' U2 R U2 R' F R U R' U' R' F' R2"
+          "algorithm": "R' U2 R U2 R' F R U R' U' R' F' R2",
+          "youtube_link": "https://www.youtube.com/watch?v=FwXr8Cawxfg"
         },
         {
           "name": "Rb Perm",
@@ -173,7 +183,8 @@
         },
         {
           "name": "Rb Perm",
-          "algorithm": "R' U2 R' D' R U' R' D R U R U' R' U' R"
+          "algorithm": "R' U2 R' D' R U' R' D R U R U' R' U' R",
+          "youtube_link": "https://www.youtube.com/watch?v=h5qLhgpKzyA"
         },
         {
           "name": "Rb Perm",
@@ -181,7 +192,8 @@
         },
         {
           "name": "T Perm",
-          "algorithm": "R U R' U' R' F R2 U' R' U' R U R' F'"
+          "algorithm": "R U R' U' R' F R2 U' R' U' R U R' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=PX1R7VW9YTs"
         },
         {
           "name": "T Perm",
@@ -218,11 +230,13 @@
         },
         {
           "name": "Na Perm",
-          "algorithm": "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'"
+          "algorithm": "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=RWpMAU_aG4Y"
         },
         {
           "name": "Na Perm",
-          "algorithm": "F' R U R' U' R' F R2 F U' R' U' R U F' R'"
+          "algorithm": "F' R U R' U' R' F R2 F U' R' U' R U F' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=iNfx--vOxd0"
         },
         {
           "name": "Na Perm",
@@ -238,11 +252,13 @@
         },
         {
           "name": "Nb Perm",
-          "algorithm": "r' D' F r U' r' F' D r2 U r' U' r' F r F'"
+          "algorithm": "r' D' F r U' r' F' D r2 U r' U' r' F r F'",
+          "youtube_link": "https://www.youtube.com/watch?v=P5yMlQQ3nsM"
         },
         {
           "name": "Nb Perm",
-          "algorithm": "R' U L' U2 R U' L R' U L' U2 R U' L"
+          "algorithm": "R' U L' U2 R U' L R' U L' U2 R U' L",
+          "youtube_link": "https://www.youtube.com/watch?v=tVFEJ077hwI"
         },
         {
           "name": "Nb Perm",
@@ -250,7 +266,8 @@
         },
         {
           "name": "V Perm",
-          "algorithm": "R' U R' U' R D' R' D R' U D' R2 U' R2 D R2"
+          "algorithm": "R' U R' U' R D' R' D R' U D' R2 U' R2 D R2",
+          "youtube_link": "https://www.youtube.com/watch?v=4mobE-mgRZs"
         },
         {
           "name": "V Perm",
@@ -262,11 +279,13 @@
         },
         {
           "name": "V Perm",
-          "algorithm": "R' U R' U' y R' F' R2 U' R' U R' F R F"
+          "algorithm": "R' U R' U' y R' F' R2 U' R' U R' F R F",
+          "youtube_link": "https://www.youtube.com/watch?v=Ud9ZDcS2yRk"
         },
         {
           "name": "Y Perm",
-          "algorithm": "F R U' R' U' R U R' F' R U R' U' R' F R F'"
+          "algorithm": "F R U' R' U' R U R' F' R U R' U' R' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=gC3LvhSAXSA"
         },
         {
           "name": "Y Perm",
@@ -287,7 +306,8 @@
       "algorithms": [
         {
           "name": "H Perm",
-          "algorithm": "M2 U' M2 U2 M2 U' M2"
+          "algorithm": "M2 U' M2 U2 M2 U' M2",
+          "youtube_link": "https://www.youtube.com/watch?v=pmA8ToRfOXQ"
         },
         {
           "name": "H Perm",
@@ -307,7 +327,8 @@
         },
         {
           "name": "Ua Perm",
-          "algorithm": "R U R' U R' U' R2 U' R' U R' U R"
+          "algorithm": "R U R' U R' U' R2 U' R' U R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=WNkmbgnvQPU"
         },
         {
           "name": "Ua Perm",
@@ -350,6 +371,141 @@
           "algorithm": "y M' U M2 U M2 U M' U2 M2"
         }
       ]
+    },
+    {
+      "subset": "Adj Swap",
+      "algorithms": [
+        {
+          "name": "Aa",
+          "algorithm": "x L2 D2 L' U' L D2 L' U L'"
+        },
+        {
+          "name": "Aa",
+          "algorithm": "x' R2 D2 R' U' R D2 R' U R' x"
+        },
+        {
+          "name": "Ab",
+          "algorithm": "x L U' L D2 L' U L D2 L2"
+        },
+        {
+          "name": "Ab",
+          "algorithm": "x' R U' R D2 R' U R D2 R2 x"
+        },
+        {
+          "name": "F",
+          "algorithm": "R' F R f' R' F R2 U R' U' R' F' R2 U R' S"
+        },
+        {
+          "name": "F",
+          "algorithm": "R2 F R F' R' U' F' U F R2 U R' U' R"
+        },
+        {
+          "name": "Ga",
+          "algorithm": "R U R' F' R U R' U' R' F R U' R' F R2 U' R' U' R U R' F'"
+        },
+        {
+          "name": "Gb",
+          "algorithm": "F' U' F R2 u R' U R U' R u' R2"
+        },
+        {
+          "name": "Gc",
+          "algorithm": "R2 F2 R U2 R U2 R' F R U R' U' R' F R2",
+          "youtube_link": "https://www.youtube.com/watch?v=M9rWmN8BzKw"
+        },
+        {
+          "name": "Gd",
+          "algorithm": "R2 F' R U R U' R' F' R U2 R' U2 R' F2 R2"
+        },
+        {
+          "name": "Ja",
+          "algorithm": "x R2 F R F' R U2 r' U r U2 x'",
+          "youtube_link": "https://www.youtube.com/watch?v=INlrVWiGZjc"
+        },
+        {
+          "name": "Ja",
+          "algorithm": "R' U L' U2 R U' R' U2 R L",
+          "youtube_link": "https://www.youtube.com/watch?v=nh9th-AYF_8"
+        },
+        {
+          "name": "Ra",
+          "algorithm": "R U' R' U' R U R D R' U' R D' R' U2 R'",
+          "youtube_link": "https://www.youtube.com/watch?v=IGHfp6CgfaA"
+        },
+        {
+          "name": "Ra",
+          "algorithm": "R U R' F' R U2 R' U2 R' F R U R U2 R'"
+        },
+        {
+          "name": "Ra",
+          "algorithm": "R U' R' U' R U R' U R' D' R U' R' D R2 U R'"
+        },
+        {
+          "name": "Rb",
+          "algorithm": "R2 F R U R U' R' F' R U2 R' U2 R"
+        },
+        {
+          "name": "Rb",
+          "algorithm": "R' U R U R' U' R' D' R U R' D R U2 R"
+        }
+      ]
+    },
+    {
+      "subset": "Opp Swap",
+      "algorithms": [
+        {
+          "name": "E",
+          "algorithm": "x' R U' R' D R U R' D' R U R' D R U' R' D' x",
+          "youtube_link": "https://www.youtube.com/watch?v=ifo0uz8s4cI"
+        },
+        {
+          "name": "E",
+          "algorithm": "R' U' R' D' R U' R' D R U R' D' R U R' D R2"
+        },
+        {
+          "name": "E",
+          "algorithm": "x' L' U L D' L' U' L D L' U' L D' L' U L D"
+        },
+        {
+          "name": "V",
+          "algorithm": "R U' R U R' D R D' R U' D R2 U R2 D' R2"
+        }
+      ]
+    },
+    {
+      "subset": "EPLL",
+      "algorithms": [
+        {
+          "name": "Ua",
+          "algorithm": "M2 U M U2 M' U M2",
+          "youtube_link": "https://www.youtube.com/watch?v=9wQWsy2K9Ig"
+        },
+        {
+          "name": "Ua",
+          "algorithm": "R2 U' S' U2 S U' R2"
+        },
+        {
+          "name": "Ua",
+          "algorithm": "R U' R U R U R U' R' U' R2"
+        },
+        {
+          "name": "Ub",
+          "algorithm": "M2 U' M U2 M' U' M2",
+          "youtube_link": "https://www.youtube.com/watch?v=N-bzJHQUOSk"
+        },
+        {
+          "name": "Ub",
+          "algorithm": "R2 U R U R' U' R' U' R' U R'"
+        },
+        {
+          "name": "Z",
+          "algorithm": "M2 U' M2 U' M' U2 M2 U2 M'",
+          "youtube_link": "https://www.youtube.com/watch?v=I0haU9Z2MeA"
+        },
+        {
+          "name": "Z",
+          "algorithm": "M' U M2 U M2 U M' U2 M2"
+        }
+      ]
     }
   ],
   "OLL": [
@@ -358,7 +514,8 @@
       "algorithms": [
         {
           "name": "OLL 1",
-          "algorithm": "R U2 R2 F R F' U2 R' F R F'"
+          "algorithm": "R U2 R2 F R F' U2 R' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=Krt5t5X9gTo"
         },
         {
           "name": "OLL 1",
@@ -382,7 +539,8 @@
         },
         {
           "name": "OLL 2",
-          "algorithm": "F R U R' U' F' f R U R' U' f'"
+          "algorithm": "F R U R' U' F' f R U R' U' f'",
+          "youtube_link": "https://www.youtube.com/watch?v=EyCwdkn03sM"
         },
         {
           "name": "OLL 2",
@@ -422,7 +580,8 @@
         },
         {
           "name": "OLL 17",
-          "algorithm": "R U R' U R' F R F' U2 R' F R F'"
+          "algorithm": "R U R' U R' F R F' U2 R' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=4QtUb6tleZE"
         },
         {
           "name": "OLL 17",
@@ -466,7 +625,8 @@
         },
         {
           "name": "OLL 19",
-          "algorithm": "r' R U R U R' U' r R2 F R F'"
+          "algorithm": "r' R U R U R' U' r R2 F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=OUTQriBA888"
         },
         {
           "name": "OLL 20",
@@ -478,7 +638,8 @@
         },
         {
           "name": "OLL 20",
-          "algorithm": "S' R U R' S U' M' U R U' r'"
+          "algorithm": "S' R U R' S U' M' U R U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=EWrqt5KvmLo"
         },
         {
           "name": "OLL 20",
@@ -491,7 +652,8 @@
       "algorithms": [
         {
           "name": "OLL 5",
-          "algorithm": "r' U2 R U R' U r"
+          "algorithm": "r' U2 R U R' U r",
+          "youtube_link": "https://www.youtube.com/watch?v=zDAhS61IFlw"
         },
         {
           "name": "OLL 5",
@@ -507,7 +669,8 @@
         },
         {
           "name": "OLL 6",
-          "algorithm": "r U2 R' U' R U' r'"
+          "algorithm": "r U2 R' U' R U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=xtuAlp8AAj8"
         },
         {
           "name": "OLL 6",
@@ -528,7 +691,8 @@
       "algorithms": [
         {
           "name": "OLL 7",
-          "algorithm": "r U R' U R U2 r'"
+          "algorithm": "r U R' U R U2 r'",
+          "youtube_link": "https://www.youtube.com/watch?v=Ls-uPCQbjqg"
         },
         {
           "name": "OLL 7",
@@ -548,7 +712,8 @@
         },
         {
           "name": "OLL 8",
-          "algorithm": "l' U' L U' L' U2 l"
+          "algorithm": "l' U' L U' L' U2 l",
+          "youtube_link": "https://www.youtube.com/watch?v=FGA7rb5u6yg"
         },
         {
           "name": "OLL 8",
@@ -560,7 +725,8 @@
         },
         {
           "name": "OLL 11",
-          "algorithm": "r' R2 U R' U R U2 R' U M'"
+          "algorithm": "r' R2 U R' U R U2 R' U M'",
+          "youtube_link": "https://www.youtube.com/watch?v=YsNvf0oUw9U"
         },
         {
           "name": "OLL 11",
@@ -645,7 +811,8 @@
         },
         {
           "name": "OLL 10",
-          "algorithm": "R U R' U R' F R F' R U2 R'"
+          "algorithm": "R U R' U R' F R F' R U2 R'",
+          "youtube_link": "https://www.youtube.com/watch?v=RPjJagkkvwM"
         },
         {
           "name": "OLL 10",
@@ -661,7 +828,8 @@
         },
         {
           "name": "OLL 35",
-          "algorithm": "R U2 R2 F R F' R U2 R'"
+          "algorithm": "R U2 R2 F R F' R U2 R'",
+          "youtube_link": "https://www.youtube.com/watch?v=bG14LWhXWCk"
         },
         {
           "name": "OLL 35",
@@ -677,11 +845,13 @@
         },
         {
           "name": "OLL 37",
-          "algorithm": "F R' F' R U R U' R'"
+          "algorithm": "F R' F' R U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=VC3QYvYu-R4"
         },
         {
           "name": "OLL 37",
-          "algorithm": "F R U' R' U' R U R' F'"
+          "algorithm": "F R U' R' U' R U R' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=1uNKnyKiFOo"
         },
         {
           "name": "OLL 37",
@@ -698,7 +868,8 @@
       "algorithms": [
         {
           "name": "OLL 13",
-          "algorithm": "F U R U2 R' U' R U R' F'"
+          "algorithm": "F U R U2 R' U' R U R' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=Xz96dRD2DaI"
         },
         {
           "name": "OLL 13",
@@ -706,7 +877,8 @@
         },
         {
           "name": "OLL 13",
-          "algorithm": "r U' r' U' r U r' F' U F"
+          "algorithm": "r U' r' U' r U r' F' U F",
+          "youtube_link": "https://www.youtube.com/watch?v=LFkHgbjtymY"
         },
         {
           "name": "OLL 13",
@@ -714,7 +886,8 @@
         },
         {
           "name": "OLL 14",
-          "algorithm": "R' F R U R' F' R F U' F'"
+          "algorithm": "R' F R U R' F' R F U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=xEoC4d91yAc"
         },
         {
           "name": "OLL 14",
@@ -730,7 +903,8 @@
         },
         {
           "name": "OLL 15",
-          "algorithm": "r' U' r R' U' R U r' U r"
+          "algorithm": "r' U' r R' U' R U r' U r",
+          "youtube_link": "https://www.youtube.com/watch?v=VeG5V1a6pHA"
         },
         {
           "name": "OLL 15",
@@ -746,7 +920,8 @@
         },
         {
           "name": "OLL 16",
-          "algorithm": "r U r' R U R' U' r U' r'"
+          "algorithm": "r U r' R U R' U' r U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=Gar0BFyHWXs"
         },
         {
           "name": "OLL 16",
@@ -767,7 +942,8 @@
       "algorithms": [
         {
           "name": "OLL 21",
-          "algorithm": "R U R' U R U' R' U R U2 R'"
+          "algorithm": "R U R' U R U' R' U R U2 R'",
+          "youtube_link": "https://www.youtube.com/watch?v=LkLCxmV63Sc"
         },
         {
           "name": "OLL 21",
@@ -783,7 +959,8 @@
         },
         {
           "name": "OLL 22",
-          "algorithm": "R U2 R2 U' R2 U' R2 U2 R"
+          "algorithm": "R U2 R2 U' R2 U' R2 U2 R",
+          "youtube_link": "https://www.youtube.com/watch?v=Z6SYc0MyBnk"
         },
         {
           "name": "OLL 22",
@@ -799,7 +976,8 @@
         },
         {
           "name": "OLL 23",
-          "algorithm": "R2 D R' U2 R D' R' U2 R'"
+          "algorithm": "R2 D R' U2 R D' R' U2 R'",
+          "youtube_link": "https://www.youtube.com/watch?v=YvgWA5n7-y0"
         },
         {
           "name": "OLL 23",
@@ -815,7 +993,8 @@
         },
         {
           "name": "OLL 24",
-          "algorithm": "r U R' U' r' F R F'"
+          "algorithm": "r U R' U' r' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=5pmKYnWCNiI"
         },
         {
           "name": "OLL 24",
@@ -851,7 +1030,8 @@
         },
         {
           "name": "OLL 26",
-          "algorithm": "R' U' R U' R' U2 R"
+          "algorithm": "R' U' R U' R' U2 R",
+          "youtube_link": "https://www.youtube.com/watch?v=3FfmBJsypKI"
         },
         {
           "name": "OLL 26",
@@ -863,7 +1043,8 @@
         },
         {
           "name": "OLL 27",
-          "algorithm": "R U R' U R U2 R'"
+          "algorithm": "R U R' U R U2 R'",
+          "youtube_link": "https://www.youtube.com/watch?v=83GLN0XmCNA"
         },
         {
           "name": "OLL 27",
@@ -884,7 +1065,8 @@
       "algorithms": [
         {
           "name": "OLL 28",
-          "algorithm": "r U R' U' M U R U' R'"
+          "algorithm": "r U R' U' M U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=blOdiGsmlQQ"
         },
         {
           "name": "OLL 28",
@@ -900,7 +1082,8 @@
         },
         {
           "name": "OLL 57",
-          "algorithm": "R U R' U' M' U R U' r'"
+          "algorithm": "R U R' U' M' U R U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=qHvJd0pk41Q"
         },
         {
           "name": "OLL 57",
@@ -921,7 +1104,8 @@
       "algorithms": [
         {
           "name": "OLL 29",
-          "algorithm": "r2 D' r U r' D r2 U' r' U' r"
+          "algorithm": "r2 D' r U r' D r2 U' r' U' r",
+          "youtube_link": "https://www.youtube.com/watch?v=0JlTP_cMNVw"
         },
         {
           "name": "OLL 29",
@@ -969,7 +1153,8 @@
         },
         {
           "name": "OLL 42",
-          "algorithm": "R' U' R U' R' U2 R F R U R' U' F'"
+          "algorithm": "R' U' R U' R' U2 R F R U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=uL5R2Hx2fV8"
         },
         {
           "name": "OLL 42",
@@ -990,7 +1175,8 @@
       "algorithms": [
         {
           "name": "OLL 31",
-          "algorithm": "R' U' F U R U' R' F' R"
+          "algorithm": "R' U' F U R U' R' F' R",
+          "youtube_link": "https://www.youtube.com/watch?v=d5krfXeAvZ8"
         },
         {
           "name": "OLL 31",
@@ -1006,7 +1192,8 @@
         },
         {
           "name": "OLL 32",
-          "algorithm": "S R U R' U' R' F R f'"
+          "algorithm": "S R U R' U' R' F R f'",
+          "youtube_link": "https://www.youtube.com/watch?v=fK4goEB_xPg"
         },
         {
           "name": "OLL 32",
@@ -1014,7 +1201,8 @@
         },
         {
           "name": "OLL 32",
-          "algorithm": "R U B' U' R' U R B R'"
+          "algorithm": "R U B' U' R' U R B R'",
+          "youtube_link": "https://www.youtube.com/watch?v=7fnmWAo3tl8"
         },
         {
           "name": "OLL 32",
@@ -1038,7 +1226,8 @@
         },
         {
           "name": "OLL 44",
-          "algorithm": "f R U R' U' f'"
+          "algorithm": "f R U R' U' f'",
+          "youtube_link": "https://www.youtube.com/watch?v=3PvMbW3CC3Y"
         },
         {
           "name": "OLL 44",
@@ -1059,7 +1248,8 @@
       "algorithms": [
         {
           "name": "OLL 33",
-          "algorithm": "R U R' U' R' F R F'"
+          "algorithm": "R U R' U' R' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=yw6EhRi2Ylo"
         },
         {
           "name": "OLL 33",
@@ -1075,7 +1265,8 @@
         },
         {
           "name": "OLL 45",
-          "algorithm": "F R U R' U' F'"
+          "algorithm": "F R U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=3HJQsUqEqyM"
         },
         {
           "name": "OLL 45",
@@ -1112,7 +1303,8 @@
         },
         {
           "name": "OLL 46",
-          "algorithm": "R' U' R' F R F' U R"
+          "algorithm": "R' U' R' F R F' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=AQynWJ4dAjk"
         },
         {
           "name": "OLL 46",
@@ -1149,7 +1341,8 @@
         },
         {
           "name": "OLL 38",
-          "algorithm": "R U R' U R U' R' U' R' F R F'"
+          "algorithm": "R U R' U R U' R' U' R' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=-OHDLxFILFU"
         },
         {
           "name": "OLL 38",
@@ -1174,11 +1367,13 @@
         },
         {
           "name": "OLL 47",
-          "algorithm": "F' L' U' L U L' U' L U F"
+          "algorithm": "F' L' U' L U L' U' L U F",
+          "youtube_link": "https://www.youtube.com/watch?v=gTDSTIKmA40"
         },
         {
           "name": "OLL 47",
-          "algorithm": "R' U' R' F R F' R' F R F' U R"
+          "algorithm": "R' U' R' F R F' R' F R F' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=9Ui1n0UjaCU"
         },
         {
           "name": "OLL 47",
@@ -1186,7 +1381,8 @@
         },
         {
           "name": "OLL 48",
-          "algorithm": "F R U R' U' R U R' U' F'"
+          "algorithm": "F R U R' U' R U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=-yAt0RgMmsY"
         },
         {
           "name": "OLL 48",
@@ -1218,7 +1414,8 @@
         },
         {
           "name": "OLL 50",
-          "algorithm": "r' U r2 U' r2 U' r2 U r'"
+          "algorithm": "r' U r2 U' r2 U' r2 U r'",
+          "youtube_link": "https://www.youtube.com/watch?v=0jwU3QUs93g"
         },
         {
           "name": "OLL 50",
@@ -1234,7 +1431,8 @@
         },
         {
           "name": "OLL 53",
-          "algorithm": "r' U' R U' R' U R U' R' U2 r"
+          "algorithm": "r' U' R U' R' U R U' R' U2 r",
+          "youtube_link": "https://www.youtube.com/watch?v=FV3aJg0kmIw"
         },
         {
           "name": "OLL 53",
@@ -1250,7 +1448,8 @@
         },
         {
           "name": "OLL 54",
-          "algorithm": "r U R' U R U' R' U R U2 r'"
+          "algorithm": "r U R' U R U' R' U R U2 r'",
+          "youtube_link": "https://www.youtube.com/watch?v=gydKjGqInfg"
         },
         {
           "name": "OLL 54",
@@ -1275,7 +1474,8 @@
         },
         {
           "name": "OLL 51",
-          "algorithm": "f R U R' U' R U R' U' f'"
+          "algorithm": "f R U R' U' R U R' U' f'",
+          "youtube_link": "https://www.youtube.com/watch?v=wntbjuYVMJs"
         },
         {
           "name": "OLL 51",
@@ -1311,7 +1511,8 @@
         },
         {
           "name": "OLL 55",
-          "algorithm": "R U2 R2 U' R U' R' U2 F R F'"
+          "algorithm": "R U2 R2 U' R U' R' U2 F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=QDehoJhTOtY"
         },
         {
           "name": "OLL 55",
@@ -1319,7 +1520,8 @@
         },
         {
           "name": "OLL 56",
-          "algorithm": "r U r' U R U' R' U R U' R' r U' r'"
+          "algorithm": "r U r' U R U' R' U R U' R' r U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=KZkE5GBzS9k"
         },
         {
           "name": "OLL 56",
@@ -1332,6 +1534,583 @@
         {
           "name": "OLL 56",
           "algorithm": "r' U' r U' R' U R U' R' U R r' U r"
+        }
+      ]
+    },
+    {
+      "subset": "Dot Case",
+      "algorithms": [
+        {
+          "name": "OLL 1",
+          "algorithm": "R U' R2 D' r U' r' D R2 U R'"
+        },
+        {
+          "name": "OLL 2",
+          "algorithm": "R U' R2 D' r U r' D R2 U R'"
+        },
+        {
+          "name": "OLL 2",
+          "algorithm": "r U r' U2 R U2 R' U2 r U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=piR89TULJ7A"
+        },
+        {
+          "name": "OLL 3",
+          "algorithm": "R' F2 R2 U2 R' F R U2 R2 F2 R"
+        },
+        {
+          "name": "OLL 3",
+          "algorithm": "f R U R' U' f' U' F R U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=KdgjbaG0YmI"
+        },
+        {
+          "name": "OLL 4",
+          "algorithm": "R' F2 R2 U2 R' F' R U2 R2 F2 R"
+        },
+        {
+          "name": "OLL 4",
+          "algorithm": "f R U R' U' f' U F R U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=JlGs-0-RxJk"
+        },
+        {
+          "name": "OLL 4",
+          "algorithm": "F U R U' R' F' U' F R U R' U' F'"
+        },
+        {
+          "name": "OLL 17",
+          "algorithm": "F R' F' R U S' R U' R' S"
+        },
+        {
+          "name": "OLL 17",
+          "algorithm": "F R' F' R2 r' U R U' R' U' M'"
+        },
+        {
+          "name": "OLL 17",
+          "algorithm": "F' r U r' U' S r' F r S'"
+        },
+        {
+          "name": "OLL 18",
+          "algorithm": "R U2 R2 F R F' U2 M' U R U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=2jrDoX0AQCc"
+        },
+        {
+          "name": "OLL 18",
+          "algorithm": "F S' R U' R' S R U2 R' U' F'"
+        },
+        {
+          "name": "OLL 19",
+          "algorithm": "S' R U R' S U' R' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=SmrT7tPMfFw"
+        },
+        {
+          "name": "OLL 20",
+          "algorithm": "M' U2 M U2 M' U M U2 M' U2 M"
+        }
+      ]
+    },
+    {
+      "subset": "Square Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 5",
+          "algorithm": "l' U2 L U L' U l"
+        },
+        {
+          "name": "OLL 5",
+          "algorithm": "R' F2 r U r' F R"
+        },
+        {
+          "name": "OLL 5",
+          "algorithm": "R' F2 L F L' F R"
+        },
+        {
+          "name": "OLL 6",
+          "algorithm": "l U2 L' U' L U' l'"
+        },
+        {
+          "name": "OLL 6",
+          "algorithm": "x' D R2 U' R' U R' D' x"
+        }
+      ]
+    },
+    {
+      "subset": "Lightning Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 7",
+          "algorithm": "l U L' U L U2 l'"
+        },
+        {
+          "name": "OLL 8",
+          "algorithm": "r' U' R U' R' U2 r",
+          "youtube_link": "https://www.youtube.com/watch?v=Vptj1rtxcxA"
+        },
+        {
+          "name": "OLL 11",
+          "algorithm": "r U R' U R' F R F' R U2 r'"
+        },
+        {
+          "name": "OLL 12",
+          "algorithm": "M' R' U' R U' R' U2 R U' M",
+          "youtube_link": "https://www.youtube.com/watch?v=E5WsvlCzOrM"
+        },
+        {
+          "name": "OLL 12",
+          "algorithm": "S R' U' R U' R' U2 R U2 S'"
+        },
+        {
+          "name": "OLL 12",
+          "algorithm": "l L2 U' L U' L' U2 L U' M'"
+        },
+        {
+          "name": "OLL 39",
+          "algorithm": "R U R' F' U' F U R U2 R'"
+        },
+        {
+          "name": "OLL 39",
+          "algorithm": "f' r U r' U' r' F r S"
+        },
+        {
+          "name": "OLL 39",
+          "algorithm": "L F' L' U' L U F U' L'",
+          "youtube_link": "https://www.youtube.com/watch?v=frAvYb9HoYo"
+        },
+        {
+          "name": "OLL 39",
+          "algorithm": "f' L F L' U' L' U L S"
+        },
+        {
+          "name": "OLL 40",
+          "algorithm": "R' F R U R' U' F' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=fYZxskw2EgI"
+        },
+        {
+          "name": "OLL 40",
+          "algorithm": "f R' F' R U R U' R' S'"
+        },
+        {
+          "name": "OLL 40",
+          "algorithm": "L' U' L F U F' U' L' U2 L"
+        }
+      ]
+    },
+    {
+      "subset": "Fish Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 9",
+          "algorithm": "R U R' U' R' F R2 U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=1tkJ78gxtfU"
+        },
+        {
+          "name": "OLL 9",
+          "algorithm": "F' U' F r U' r' U r U r'"
+        },
+        {
+          "name": "OLL 9",
+          "algorithm": "L' U' L U' L F' L' F L' U2 L"
+        },
+        {
+          "name": "OLL 10",
+          "algorithm": "F U F' R' F R U' R' F' R"
+        },
+        {
+          "name": "OLL 10",
+          "algorithm": "M' R' U2 R U R' U R U M"
+        },
+        {
+          "name": "OLL 10",
+          "algorithm": "L' U' L U L F' L2 U' L U F"
+        },
+        {
+          "name": "OLL 35",
+          "algorithm": "L' U2 L2 F' L' F L' U2 L"
+        },
+        {
+          "name": "OLL 37",
+          "algorithm": "F' r U r' U' r' F r"
+        },
+        {
+          "name": "OLL 37",
+          "algorithm": "r2 D' r U' r' D r U r"
+        }
+      ]
+    },
+    {
+      "subset": "Knight Move Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 15",
+          "algorithm": "l' U' l L' U' L U l' U l",
+          "youtube_link": "https://www.youtube.com/watch?v=B8q4UMQ2Kow"
+        },
+        {
+          "name": "OLL 15",
+          "algorithm": "R' F' R L' U' L U R' F R"
+        },
+        {
+          "name": "OLL 16",
+          "algorithm": "R' F R U R' U' F' R U' R' U2 R"
+        },
+        {
+          "name": "OLL 16",
+          "algorithm": "l U l' L U L' U' l U' l'"
+        }
+      ]
+    },
+    {
+      "subset": "OCLL",
+      "algorithms": [
+        {
+          "name": "OLL 21",
+          "algorithm": "R U2 R' U' R U R' U' R U' R'"
+        },
+        {
+          "name": "OLL 21",
+          "algorithm": "F R U R' U' R U R' U' R U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=AF0bvyLDsgI"
+        },
+        {
+          "name": "OLL 23",
+          "algorithm": "R2 D' R U2 R' D R U2 R",
+          "youtube_link": "https://www.youtube.com/watch?v=clgJFx6RBUM"
+        },
+        {
+          "name": "OLL 23",
+          "algorithm": "R U2 R' U' R U' R' L' U2 L U L' U L"
+        },
+        {
+          "name": "OLL 24",
+          "algorithm": "x' R U R' D R U' R' D' x"
+        },
+        {
+          "name": "OLL 24",
+          "algorithm": "R' F' r U R U' r' F"
+        },
+        {
+          "name": "OLL 24",
+          "algorithm": "R U R D R' U' R D' R2"
+        },
+        {
+          "name": "OLL 25",
+          "algorithm": "F' r U R' U' r' F R",
+          "youtube_link": "https://www.youtube.com/watch?v=w2pqzFn0KqU"
+        },
+        {
+          "name": "OLL 26",
+          "algorithm": "R U2 R' U' R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=W4E8fo6-D84"
+        },
+        {
+          "name": "OLL 26",
+          "algorithm": "L' U' L U' L' U2 L"
+        },
+        {
+          "name": "OLL 26",
+          "algorithm": "L' U R U' L U R'"
+        },
+        {
+          "name": "OLL 27",
+          "algorithm": "R' U2 R U R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=MDJJIJ7DxAs"
+        },
+        {
+          "name": "OLL 27",
+          "algorithm": "L' U2 L U L' U L"
+        },
+        {
+          "name": "OLL 27",
+          "algorithm": "L U L' U L U2 L'"
+        }
+      ]
+    },
+    {
+      "subset": "All Corners Oriented",
+      "algorithms": [
+        {
+          "name": "OLL 28",
+          "algorithm": "M' U M U2 M' U M"
+        },
+        {
+          "name": "OLL 57",
+          "algorithm": "R U' R' S' R U R' S"
+        },
+        {
+          "name": "OLL 57",
+          "algorithm": "R U R' S' R U' R' S"
+        }
+      ]
+    },
+    {
+      "subset": "Awkward Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 29",
+          "algorithm": "R U R' U' R U' R' F' U' F R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=xaSQb6RdIrY"
+        },
+        {
+          "name": "OLL 29",
+          "algorithm": "S' R U R' U' R' F R F' U S"
+        },
+        {
+          "name": "OLL 30",
+          "algorithm": "r' D' r U' r' D r2 U' r' U r U r'",
+          "youtube_link": "https://www.youtube.com/watch?v=HSDYQ3F9_GQ"
+        },
+        {
+          "name": "OLL 30",
+          "algorithm": "F U R U2 R' U' R U2 R' U' F'"
+        },
+        {
+          "name": "OLL 30",
+          "algorithm": "F R' F R2 U' R' U' R U R' F2"
+        },
+        {
+          "name": "OLL 30",
+          "algorithm": "S' R' U' R f R' U R U' F'"
+        },
+        {
+          "name": "OLL 41",
+          "algorithm": "R U R' U R U2 R' F R U R' U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=AmxQNjhBzfk"
+        },
+        {
+          "name": "OLL 41",
+          "algorithm": "F U R2 D R' U' R D' R2 F'"
+        },
+        {
+          "name": "OLL 41",
+          "algorithm": "S U' R' F' U' F U R S'"
+        },
+        {
+          "name": "OLL 42",
+          "algorithm": "F S' R U R' U' F' U S"
+        },
+        {
+          "name": "OLL 42",
+          "algorithm": "R' F R F' R' F R F' R U R' U' R U R'"
+        },
+        {
+          "name": "OLL 42",
+          "algorithm": "R' U' F2 u' R U R' D R2 B"
+        }
+      ]
+    },
+    {
+      "subset": "P Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 31",
+          "algorithm": "S' L' U' L U L F' L' f"
+        },
+        {
+          "name": "OLL 31",
+          "algorithm": "S R U R' U' f' U' F"
+        },
+        {
+          "name": "OLL 31",
+          "algorithm": "F R' F' R U R U R' U' R U' R'"
+        },
+        {
+          "name": "OLL 32",
+          "algorithm": "L U F' U' L' U L F L'"
+        },
+        {
+          "name": "OLL 32",
+          "algorithm": "R' F R F' U' r U' r' U r U r'"
+        },
+        {
+          "name": "OLL 43",
+          "algorithm": "R' U' F' U F R",
+          "youtube_link": "https://www.youtube.com/watch?v=joYVuCv8p-E"
+        },
+        {
+          "name": "OLL 43",
+          "algorithm": "F' U' L' U L F",
+          "youtube_link": "https://www.youtube.com/watch?v=hQdWbvmddmQ"
+        },
+        {
+          "name": "OLL 44",
+          "algorithm": "F U R U' R' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=CeqGe0Q1wMg"
+        },
+        {
+          "name": "OLL 44",
+          "algorithm": "R U B U' B' R'"
+        },
+        {
+          "name": "OLL 44",
+          "algorithm": "L U F U' F' L'"
+        }
+      ]
+    },
+    {
+      "subset": "T Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 33",
+          "algorithm": "L' U' L U L F' L' F"
+        },
+        {
+          "name": "OLL 33",
+          "algorithm": "r' F' r U r U' r' F"
+        },
+        {
+          "name": "OLL 45",
+          "algorithm": "R' F' U' F U R"
+        },
+        {
+          "name": "OLL 45",
+          "algorithm": "f U R U' R' f'"
+        },
+        {
+          "name": "OLL 45",
+          "algorithm": "F' L' U' L U F"
+        }
+      ]
+    },
+    {
+      "subset": "C Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 34",
+          "algorithm": "f R f' U' r' U' R U M'"
+        },
+        {
+          "name": "OLL 34",
+          "algorithm": "R U R2 U' R' F R U R U' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=tOB1D8nmMIs"
+        },
+        {
+          "name": "OLL 34",
+          "algorithm": "R U R' U' B' R' F R F' B"
+        },
+        {
+          "name": "OLL 46",
+          "algorithm": "F R U R' U' F' U' R U R' U R U2 R'"
+        }
+      ]
+    },
+    {
+      "subset": "W Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 36",
+          "algorithm": "R U R2 F' U' F U R2 U2 R'"
+        },
+        {
+          "name": "OLL 36",
+          "algorithm": "L' U' L U' L' U L U L F' L' F",
+          "youtube_link": "https://www.youtube.com/watch?v=6E5tMt6BGog"
+        },
+        {
+          "name": "OLL 36",
+          "algorithm": "R U R' F' R U R' U' R' F R U' R' F R F'"
+        },
+        {
+          "name": "OLL 36",
+          "algorithm": "R' F' U' F2 U R U' R' F' R"
+        },
+        {
+          "name": "OLL 38",
+          "algorithm": "F R U' R' S U' R U R' f'"
+        },
+        {
+          "name": "OLL 38",
+          "algorithm": "L' U2 l' D' l U2 l' D l L"
+        }
+      ]
+    },
+    {
+      "subset": "L Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 47",
+          "algorithm": "F R' F' R U2 R U' R' U R U2 R'"
+        },
+        {
+          "name": "OLL 47",
+          "algorithm": "R' F' U' F U F' U' F U R"
+        },
+        {
+          "name": "OLL 48",
+          "algorithm": "f U R U' R' U R U' R' f'"
+        },
+        {
+          "name": "OLL 49",
+          "algorithm": "r U' r2 U r2 U r2 U' r",
+          "youtube_link": "https://www.youtube.com/watch?v=dQrWHwyT8bo"
+        },
+        {
+          "name": "OLL 49",
+          "algorithm": "R' F R' F' R2 U2 B' R B R'"
+        },
+        {
+          "name": "OLL 50",
+          "algorithm": "R' F R2 B' R2 F' R2 B R'"
+        },
+        {
+          "name": "OLL 50",
+          "algorithm": "R U2 R' U' R U' R' F R U R' U' F'"
+        },
+        {
+          "name": "OLL 50",
+          "algorithm": "l' U l2 U' l2 U' l2 U l'"
+        },
+        {
+          "name": "OLL 53",
+          "algorithm": "r' U2 R U R' U' R U R' U r"
+        },
+        {
+          "name": "OLL 53",
+          "algorithm": "l' U' L U' L' U L U' L' U2 l"
+        },
+        {
+          "name": "OLL 53",
+          "algorithm": "l' U2 L U L' U' L U L' U l"
+        },
+        {
+          "name": "OLL 54",
+          "algorithm": "r U2 R' U' R U R' U' R U' r'"
+        },
+        {
+          "name": "OLL 54",
+          "algorithm": "r U r' R U R' U' R U R' U' r U' r'"
+        },
+        {
+          "name": "OLL 54",
+          "algorithm": "l U L' U L U' L' U L U2 l'"
+        }
+      ]
+    },
+    {
+      "subset": "Line Shapes",
+      "algorithms": [
+        {
+          "name": "OLL 51",
+          "algorithm": "F U R U' R' U R U' R' F'",
+          "youtube_link": "https://www.youtube.com/watch?v=6j4D0FHgSOY"
+        },
+        {
+          "name": "OLL 51",
+          "algorithm": "R' U' R' F R F' R U' R' U2 R"
+        },
+        {
+          "name": "OLL 51",
+          "algorithm": "r' F' U' F U F' U' F U r"
+        },
+        {
+          "name": "OLL 52",
+          "algorithm": "R' F' U' F U' R U R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=ZuRxOkExG8o"
+        },
+        {
+          "name": "OLL 55",
+          "algorithm": "R' F U R U' R2 F' R2 U R' U' R"
+        },
+        {
+          "name": "OLL 55",
+          "algorithm": "R' F R U R U' R2 F' R2 U' R' U R U R'"
         }
       ]
     }
@@ -1430,11 +2209,13 @@
       "algorithms": [
         {
           "name": "F2L 1",
-          "algorithm": "U R U' R'"
+          "algorithm": "U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=GJAPWiFQlcY"
         },
         {
           "name": "F2L 1",
-          "algorithm": "R' F R F'"
+          "algorithm": "R' F R F'",
+          "youtube_link": "https://www.youtube.com/watch?v=d4iMIP8e_bw"
         },
         {
           "name": "F2L 1",
@@ -1478,7 +2259,8 @@
         },
         {
           "name": "F2L 1 (Back Right)",
-          "algorithm": "U f R' f'"
+          "algorithm": "U f R' f'",
+          "youtube_link": "https://www.youtube.com/watch?v=Jy3Az3J9CSg"
         },
         {
           "name": "F2L 1 (Back Right)",
@@ -1494,7 +2276,8 @@
         },
         {
           "name": "F2L 2",
-          "algorithm": "F R' F' R"
+          "algorithm": "F R' F' R",
+          "youtube_link": "https://www.youtube.com/watch?v=xtiPZNtB428"
         },
         {
           "name": "F2L 2",
@@ -1542,7 +2325,8 @@
         },
         {
           "name": "F2L 2 (Back Right)",
-          "algorithm": "U' R' U R"
+          "algorithm": "U' R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=zvydcM9cYDM"
         },
         {
           "name": "F2L 2 (Back Right)",
@@ -1558,7 +2342,8 @@
         },
         {
           "name": "F2L 3",
-          "algorithm": "F' U' F"
+          "algorithm": "F' U' F",
+          "youtube_link": "https://www.youtube.com/watch?v=hjGuFNoMRW0"
         },
         {
           "name": "F2L 3",
@@ -1606,7 +2391,8 @@
         },
         {
           "name": "F2L 3 (Back Right)",
-          "algorithm": "R' U' R"
+          "algorithm": "R' U' R",
+          "youtube_link": "https://www.youtube.com/watch?v=fivtKa3yUIo"
         },
         {
           "name": "F2L 3 (Back Right)",
@@ -1622,7 +2408,8 @@
         },
         {
           "name": "F2L 4",
-          "algorithm": "R U R'"
+          "algorithm": "R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=EmUXH3oqdh4"
         },
         {
           "name": "F2L 4",
@@ -1670,7 +2457,8 @@
         },
         {
           "name": "F2L 4 (Back Right)",
-          "algorithm": "f R f'"
+          "algorithm": "f R f'",
+          "youtube_link": "https://www.youtube.com/watch?v=0TrJqdgo0vY"
         },
         {
           "name": "F2L 4 (Back Right)",
@@ -1691,7 +2479,8 @@
       "algorithms": [
         {
           "name": "F2L 5",
-          "algorithm": "U' R U R' U2 R U' R'"
+          "algorithm": "U' R U R' U2 R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=RyT5JGz41gw"
         },
         {
           "name": "F2L 5",
@@ -1739,7 +2528,8 @@
         },
         {
           "name": "F2L 5 (Back Right)",
-          "algorithm": "U' R' F R U R' U' F' R"
+          "algorithm": "U' R' F R U R' U' F' R",
+          "youtube_link": "https://www.youtube.com/watch?v=ZSHA4Sl40yc"
         },
         {
           "name": "F2L 5 (Back Right)",
@@ -1755,7 +2545,8 @@
         },
         {
           "name": "F2L 6",
-          "algorithm": "U' r U' R' U R U r'"
+          "algorithm": "U' r U' R' U R U r'",
+          "youtube_link": "https://www.youtube.com/watch?v=i2CSmZJc7Ck"
         },
         {
           "name": "F2L 6",
@@ -1803,7 +2594,8 @@
         },
         {
           "name": "F2L 6 (Back Right)",
-          "algorithm": "U R' U' R U2 R' U R"
+          "algorithm": "U R' U' R U2 R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=vTba_3ZhQh8"
         },
         {
           "name": "F2L 6 (Back Right)",
@@ -1863,7 +2655,8 @@
         },
         {
           "name": "F2L 7 (Back Right)",
-          "algorithm": "r U2 R2 U' R2 U' r'"
+          "algorithm": "r U2 R2 U' R2 U' r'",
+          "youtube_link": "https://www.youtube.com/watch?v=irgZ-1XUFkY"
         },
         {
           "name": "F2L 7 (Back Right)",
@@ -1935,7 +2728,8 @@
         },
         {
           "name": "F2L 9",
-          "algorithm": "U' R U' R' U F' U' F"
+          "algorithm": "U' R U' R' U F' U' F",
+          "youtube_link": "https://www.youtube.com/watch?v=uKp6lYvTTNc"
         },
         {
           "name": "F2L 9",
@@ -1983,7 +2777,8 @@
         },
         {
           "name": "F2L 9 (Back Right)",
-          "algorithm": "U R' U' R U' R' U' R"
+          "algorithm": "U R' U' R U' R' U' R",
+          "youtube_link": "https://www.youtube.com/watch?v=doZ9u5w4RkQ"
         },
         {
           "name": "F2L 9 (Back Right)",
@@ -1999,7 +2794,8 @@
         },
         {
           "name": "F2L 10",
-          "algorithm": "U' R U R' U R U R'"
+          "algorithm": "U' R U R' U R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=gyyYICRQg5c"
         },
         {
           "name": "F2L 10",
@@ -2047,7 +2843,8 @@
         },
         {
           "name": "F2L 10 (Back Right)",
-          "algorithm": "U R' U R U' f R f'"
+          "algorithm": "U R' U R U' f R f'",
+          "youtube_link": "https://www.youtube.com/watch?v=XWBx_Q_VTlU"
         },
         {
           "name": "F2L 10 (Back Right)",
@@ -2063,7 +2860,8 @@
         },
         {
           "name": "F2L 19",
-          "algorithm": "U R U2 R' U R U' R'"
+          "algorithm": "U R U2 R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=EodPFBbDBME"
         },
         {
           "name": "F2L 19",
@@ -2103,7 +2901,8 @@
         },
         {
           "name": "F2L 19 (Back Right)",
-          "algorithm": "y U R U2 R' U R U' R'"
+          "algorithm": "y U R U2 R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=hDdS5rfiQlQ"
         },
         {
           "name": "F2L 19 (Back Right)",
@@ -2119,7 +2918,8 @@
         },
         {
           "name": "F2L 20",
-          "algorithm": "y' U' R' U2 R U' R' U R"
+          "algorithm": "y' U' R' U2 R U' R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=Am2sBaR-xVs"
         },
         {
           "name": "F2L 20",
@@ -2163,7 +2963,8 @@
         },
         {
           "name": "F2L 20 (Back Right)",
-          "algorithm": "U' R' U2 R U' R' U R"
+          "algorithm": "U' R' U2 R U' R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=QQ3F4H7kErI"
         },
         {
           "name": "F2L 20 (Back Right)",
@@ -2171,11 +2972,13 @@
         },
         {
           "name": "F2L 21",
-          "algorithm": "U2 R U R' U R U' R'"
+          "algorithm": "U2 R U R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=6M2nkaooAZk"
         },
         {
           "name": "F2L 21",
-          "algorithm": "R U' R' U2 R U R'"
+          "algorithm": "R U' R' U2 R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=xgz0P4IQ0Z8"
         },
         {
           "name": "F2L 21",
@@ -2219,7 +3022,8 @@
         },
         {
           "name": "F2L 21 (Back Right)",
-          "algorithm": "r' U r U2 r' U' r"
+          "algorithm": "r' U r U2 r' U' r",
+          "youtube_link": "https://www.youtube.com/watch?v=f3HG3xInUDw"
         },
         {
           "name": "F2L 21 (Back Right)",
@@ -2235,7 +3039,8 @@
         },
         {
           "name": "F2L 22",
-          "algorithm": "r U' r' U2 r U r'"
+          "algorithm": "r U' r' U2 r U r'",
+          "youtube_link": "https://www.youtube.com/watch?v=0IpO4zFYFoo"
         },
         {
           "name": "F2L 22",
@@ -2287,7 +3092,8 @@
         },
         {
           "name": "F2L 22 (Back Right)",
-          "algorithm": "U2 R' U' R U' R' U R"
+          "algorithm": "U2 R' U' R U' R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=Am5C0ItUcUQ"
         },
         {
           "name": "F2L 22 (Back Right)",
@@ -2304,7 +3110,8 @@
       "algorithms": [
         {
           "name": "F2L 11",
-          "algorithm": "U' R U2 R' U F' U' F"
+          "algorithm": "U' R U2 R' U F' U' F",
+          "youtube_link": "https://www.youtube.com/watch?v=6yXzaZM3GEk"
         },
         {
           "name": "F2L 11",
@@ -2368,7 +3175,8 @@
         },
         {
           "name": "F2L 12",
-          "algorithm": "R U' R' U R U' R' U2 R U' R'"
+          "algorithm": "R U' R' U R U' R' U2 R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=IW2wvQ2nC2o"
         },
         {
           "name": "F2L 12",
@@ -2416,7 +3224,8 @@
         },
         {
           "name": "F2L 12 (Back Right)",
-          "algorithm": "U R' U2 R U' f R f'"
+          "algorithm": "U R' U2 R U' f R f'",
+          "youtube_link": "https://www.youtube.com/watch?v=xz71cFBU-0k"
         },
         {
           "name": "F2L 12 (Back Right)",
@@ -2432,7 +3241,8 @@
         },
         {
           "name": "F2L 13",
-          "algorithm": "y' U R' U R U' R' U' R"
+          "algorithm": "y' U R' U R U' R' U' R",
+          "youtube_link": "https://www.youtube.com/watch?v=Sjo7aOX6f8o"
         },
         {
           "name": "F2L 13",
@@ -2480,7 +3290,8 @@
         },
         {
           "name": "F2L 13 (Back Right)",
-          "algorithm": "U R' U R U' R' U' R"
+          "algorithm": "U R' U R U' R' U' R",
+          "youtube_link": "https://www.youtube.com/watch?v=3uNpaP_2tn4"
         },
         {
           "name": "F2L 13 (Back Right)",
@@ -2488,7 +3299,8 @@
         },
         {
           "name": "F2L 14",
-          "algorithm": "U' R U' R' U R U R'"
+          "algorithm": "U' R U' R' U R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=BwaDJAZaIpc"
         },
         {
           "name": "F2L 14",
@@ -2528,7 +3340,8 @@
         },
         {
           "name": "F2L 14 (Back Right)",
-          "algorithm": "y U' R U' R' U R U R'"
+          "algorithm": "y U' R U' R' U R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=tJ1dfUu4wwY"
         },
         {
           "name": "F2L 14 (Back Right)",
@@ -2544,7 +3357,8 @@
         },
         {
           "name": "F2L 15",
-          "algorithm": "R' D' R U' R' D R U R U' R'"
+          "algorithm": "R' D' R U' R' D R U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=m0Uve1y-8tE"
         },
         {
           "name": "F2L 15",
@@ -2592,7 +3406,8 @@
         },
         {
           "name": "F2L 15 (Back Right)",
-          "algorithm": "R' U R U2 f R f'"
+          "algorithm": "R' U R U2 f R f'",
+          "youtube_link": "https://www.youtube.com/watch?v=p9I4LilQa1s"
         },
         {
           "name": "F2L 15 (Back Right)",
@@ -2608,7 +3423,8 @@
         },
         {
           "name": "F2L 16",
-          "algorithm": "R U' R' U2 F' U' F"
+          "algorithm": "R U' R' U2 F' U' F",
+          "youtube_link": "https://www.youtube.com/watch?v=Rf5jEBMOUnc"
         },
         {
           "name": "F2L 16",
@@ -2656,7 +3472,8 @@
         },
         {
           "name": "F2L 16 (Back Right)",
-          "algorithm": "R' U' R U2 R' U R U' R' U R"
+          "algorithm": "R' U' R U2 R' U R U' R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=kmTSBzG5PzA"
         },
         {
           "name": "F2L 16 (Back Right)",
@@ -2672,7 +3489,8 @@
         },
         {
           "name": "F2L 17",
-          "algorithm": "R U2 R' U' R U R'"
+          "algorithm": "R U2 R' U' R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=ncxTAoW7jow"
         },
         {
           "name": "F2L 17",
@@ -2712,7 +3530,8 @@
         },
         {
           "name": "F2L 17 (Back Right)",
-          "algorithm": "y' L U2 L' U' L U L'"
+          "algorithm": "y' L U2 L' U' L U L'",
+          "youtube_link": "https://www.youtube.com/watch?v=W4GSkMvkJ68"
         },
         {
           "name": "F2L 17 (Back Right)",
@@ -2728,7 +3547,8 @@
         },
         {
           "name": "F2L 18",
-          "algorithm": "y' R' U2 R U R' U' R"
+          "algorithm": "y' R' U2 R U R' U' R",
+          "youtube_link": "https://www.youtube.com/watch?v=NotJBG5dR6w"
         },
         {
           "name": "F2L 18",
@@ -2740,7 +3560,8 @@
         },
         {
           "name": "F2L 18",
-          "algorithm": "R' F R F' R U' R' U R U' R'"
+          "algorithm": "R' F R F' R U' R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=Jhnm4pk86A4"
         },
         {
           "name": "F2L 18 (Front Left)",
@@ -2768,7 +3589,8 @@
         },
         {
           "name": "F2L 23",
-          "algorithm": "U R U' R' U' R U' R' U R U' R'"
+          "algorithm": "U R U' R' U' R U' R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=ZkLqXWiLFAg"
         },
         {
           "name": "F2L 23",
@@ -2816,7 +3638,8 @@
         },
         {
           "name": "F2L 23 (Back Right)",
-          "algorithm": "U R' F R' F' R2 U' R' U R"
+          "algorithm": "U R' F R' F' R2 U' R' U R",
+          "youtube_link": "https://www.youtube.com/watch?v=SXGqjMXCtR0"
         },
         {
           "name": "F2L 23 (Back Right)",
@@ -2832,7 +3655,8 @@
         },
         {
           "name": "F2L 24",
-          "algorithm": "F U R U' R' F' R U' R'"
+          "algorithm": "F U R U' R' F' R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=6HbnAQY-aVM"
         },
         {
           "name": "F2L 24",
@@ -2880,11 +3704,13 @@
         },
         {
           "name": "F2L 24 (Back Right)",
-          "algorithm": "R' U' R U2 R' U' R U R' U' R"
+          "algorithm": "R' U' R U2 R' U' R U R' U' R",
+          "youtube_link": "https://www.youtube.com/watch?v=PvBq5ivX114"
         },
         {
           "name": "F2L 24 (Back Right)",
-          "algorithm": "U2 R2 U2 R U R' U R2"
+          "algorithm": "U2 R2 U2 R U R' U R2",
+          "youtube_link": "https://www.youtube.com/watch?v=zskzJgMwR0c"
         },
         {
           "name": "F2L 24 (Back Right)",
@@ -2901,7 +3727,8 @@
       "algorithms": [
         {
           "name": "F2L 25",
-          "algorithm": "U' R' F R F' R U R'"
+          "algorithm": "U' R' F R F' R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=S9257JxJwZk"
         },
         {
           "name": "F2L 25",
@@ -2909,7 +3736,8 @@
         },
         {
           "name": "F2L 25",
-          "algorithm": "U' F' R U R' U' R' F R"
+          "algorithm": "U' F' R U R' U' R' F R",
+          "youtube_link": "https://www.youtube.com/watch?v=Lw0cHb3nT4o"
         },
         {
           "name": "F2L 25",
@@ -2965,7 +3793,8 @@
         },
         {
           "name": "F2L 26",
-          "algorithm": "U R U' R' F R' F' R"
+          "algorithm": "U R U' R' F R' F' R",
+          "youtube_link": "https://www.youtube.com/watch?v=gr9h0xiXWjM"
         },
         {
           "name": "F2L 26",
@@ -3029,7 +3858,8 @@
         },
         {
           "name": "F2L 27",
-          "algorithm": "R U' R' U R U' R'"
+          "algorithm": "R U' R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=JBYRStpmDL8"
         },
         {
           "name": "F2L 27",
@@ -3085,7 +3915,8 @@
         },
         {
           "name": "F2L 28",
-          "algorithm": "y L' U L U' L' U L"
+          "algorithm": "y L' U L U' L' U L",
+          "youtube_link": "https://www.youtube.com/watch?v=_VWlb_5SrsI"
         },
         {
           "name": "F2L 28",
@@ -3125,7 +3956,8 @@
         },
         {
           "name": "F2L 29",
-          "algorithm": "R' F R F' U R U' R'"
+          "algorithm": "R' F R F' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=EvCzppFMLCs"
         },
         {
           "name": "F2L 29",
@@ -3185,7 +4017,8 @@
         },
         {
           "name": "F2L 30",
-          "algorithm": "R U R' U' R U R'"
+          "algorithm": "R U R' U' R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=MDy2EhrraRE"
         },
         {
           "name": "F2L 30",
@@ -3246,7 +4079,8 @@
       "algorithms": [
         {
           "name": "F2L 31",
-          "algorithm": "U' R' F R F' R U' R'"
+          "algorithm": "U' R' F R F' R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=YflQOzAiK5s"
         },
         {
           "name": "F2L 31",
@@ -3310,7 +4144,8 @@
         },
         {
           "name": "F2L 32",
-          "algorithm": "U R U' R' U R U' R' U R U' R'"
+          "algorithm": "U R U' R' U R U' R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=-xHjZYwAvWk"
         },
         {
           "name": "F2L 32",
@@ -3374,7 +4209,8 @@
         },
         {
           "name": "F2L 33",
-          "algorithm": "U' R U' R' U2 R U' R'"
+          "algorithm": "U' R U' R' U2 R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=l49Oin4njnY"
         },
         {
           "name": "F2L 33",
@@ -3434,11 +4270,13 @@
         },
         {
           "name": "F2L 34",
-          "algorithm": "U R U R' U2 R U R'"
+          "algorithm": "U R U R' U2 R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=1Zh-CRRe0E4"
         },
         {
           "name": "F2L 34",
-          "algorithm": "U' R U2 R' U R U R'"
+          "algorithm": "U' R U2 R' U R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=uLiLxtW2lko"
         },
         {
           "name": "F2L 34",
@@ -3494,7 +4332,8 @@
         },
         {
           "name": "F2L 35",
-          "algorithm": "U' R U R' U F' U' F"
+          "algorithm": "U' R U R' U F' U' F",
+          "youtube_link": "https://www.youtube.com/watch?v=ZYv09SLzoKw"
         },
         {
           "name": "F2L 35",
@@ -3558,11 +4397,13 @@
         },
         {
           "name": "F2L 36",
-          "algorithm": "U F' U' F U' R U R'"
+          "algorithm": "U F' U' F U' R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=cfa5NlJaxZ8"
         },
         {
           "name": "F2L 36",
-          "algorithm": "U2 R' F R F' U2 R U R'"
+          "algorithm": "U2 R' F R F' U2 R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=PXry0dwYwgE"
         },
         {
           "name": "F2L 36",
@@ -3627,7 +4468,8 @@
       "algorithms": [
         {
           "name": "F2L 37",
-          "algorithm": "R2 U2 F R2 F' U2 R' U R'"
+          "algorithm": "R2 U2 F R2 F' U2 R' U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=Yo29cluMUNc"
         },
         {
           "name": "F2L 37",
@@ -3691,7 +4533,8 @@
         },
         {
           "name": "F2L 38",
-          "algorithm": "R U' R' U' R U R' U2 R U' R'"
+          "algorithm": "R U' R' U' R U R' U2 R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=ji7XpGGcrWs"
         },
         {
           "name": "F2L 38",
@@ -3751,7 +4594,8 @@
         },
         {
           "name": "F2L 39",
-          "algorithm": "R U' R' U R U2 R' U R U' R'"
+          "algorithm": "R U' R' U R U2 R' U R U' R'",
+          "youtube_link": "https://www.youtube.com/watch?v=vq-vBqWFuec"
         },
         {
           "name": "F2L 39",
@@ -3815,7 +4659,8 @@
         },
         {
           "name": "F2L 40",
-          "algorithm": "r U' r' U2 r U r' R U R'"
+          "algorithm": "r U' r' U2 r U r' R U R'",
+          "youtube_link": "https://www.youtube.com/watch?v=u_RyH_2Kqhw"
         },
         {
           "name": "F2L 40",
@@ -3879,7 +4724,8 @@
         },
         {
           "name": "F2L 41",
-          "algorithm": "R U' R' r U' r' U2 r U r'"
+          "algorithm": "R U' R' r U' r' U2 r U r'",
+          "youtube_link": "https://www.youtube.com/watch?v=DpuAOiDiin4"
         },
         {
           "name": "F2L 41",
@@ -10086,6 +10932,2675 @@
         {
           "name": "Arrow (DF DB)",
           "algorithm": "U' M U' M' U' M"
+        }
+      ]
+    }
+  ],
+  "F2L - Advanced": [
+    {
+      "subset": "Trapped Corner",
+      "algorithms": [
+        {
+          "name": "AF2L 1 - Front Right",
+          "algorithm": "S R' S'"
+        },
+        {
+          "name": "AF2L 1 - Front Right",
+          "algorithm": "R U' R' y R U' R'"
+        },
+        {
+          "name": "AF2L 1 - Front Right",
+          "algorithm": "R U' R' f R' f'"
+        },
+        {
+          "name": "AF2L 1 - Front Right",
+          "algorithm": "R U' R' U R2 F R F' R"
+        },
+        {
+          "name": "AF2L 1 - Front Left",
+          "algorithm": "L' U' L U R U' R'"
+        },
+        {
+          "name": "AF2L 1 - Front Left",
+          "algorithm": "M F' M'"
+        },
+        {
+          "name": "AF2L 1 - Front Left",
+          "algorithm": "L' R U' R' L"
+        },
+        {
+          "name": "AF2L 1 - Front Left",
+          "algorithm": "R L' U' L R'"
+        },
+        {
+          "name": "AF2L 1 - Back Left",
+          "algorithm": "S' L' S"
+        },
+        {
+          "name": "AF2L 1 - Back Left",
+          "algorithm": "L U' L' y L U' L'"
+        },
+        {
+          "name": "AF2L 1 - Back Left",
+          "algorithm": "y' L' U' L U R U' R'"
+        },
+        {
+          "name": "AF2L 1 - Back Left",
+          "algorithm": "L U' L' y' R U' R'"
+        },
+        {
+          "name": "AF2L 1 - Back Right",
+          "algorithm": "R' U' R U L U' L'"
+        },
+        {
+          "name": "AF2L 1 - Back Right",
+          "algorithm": "L R' U' R L'"
+        },
+        {
+          "name": "AF2L 1 - Back Right",
+          "algorithm": "M' f' E"
+        },
+        {
+          "name": "AF2L 1 - Back Right",
+          "algorithm": "y R U' R2 F' U' F R"
+        },
+        {
+          "name": "AF2L 2 - Front Right",
+          "algorithm": "L F' U2 F L'"
+        },
+        {
+          "name": "AF2L 2 - Front Right",
+          "algorithm": "R U' R' L U2 L'"
+        },
+        {
+          "name": "AF2L 2 - Front Right",
+          "algorithm": "L R U' R' U2 L'"
+        },
+        {
+          "name": "AF2L 2 - Front Right",
+          "algorithm": "F' L U2 L' F"
+        },
+        {
+          "name": "AF2L 2 - Front Left",
+          "algorithm": "r' U F2 U' r"
+        },
+        {
+          "name": "AF2L 2 - Front Left",
+          "algorithm": "L' U' L y R U' R'"
+        },
+        {
+          "name": "AF2L 2 - Front Left",
+          "algorithm": "y' R U' R' L U2 L'"
+        },
+        {
+          "name": "AF2L 2 - Front Left",
+          "algorithm": "L' U' L Fw R' Fw'"
+        },
+        {
+          "name": "AF2L 2 - Back Left",
+          "algorithm": "l U' F2 U l'"
+        },
+        {
+          "name": "AF2L 2 - Back Left",
+          "algorithm": "L U' L' U' R U' R'"
+        },
+        {
+          "name": "AF2L 2 - Back Left",
+          "algorithm": "L U' L' R U2 R'"
+        },
+        {
+          "name": "AF2L 2 - Back Left",
+          "algorithm": "y' r' U F2 U' r"
+        },
+        {
+          "name": "AF2L 2 - Back Right",
+          "algorithm": "F R' U2 R F'"
+        },
+        {
+          "name": "AF2L 2 - Back Right",
+          "algorithm": "R' U' R F U' F'"
+        },
+        {
+          "name": "AF2L 2 - Back Right",
+          "algorithm": "R' U' R y' R U' R'"
+        },
+        {
+          "name": "AF2L 2 - Back Right",
+          "algorithm": "y R U' R' L U2 L'"
+        },
+        {
+          "name": "AF2L 3 - Front Right",
+          "algorithm": "R U' R' U F' r U r'"
+        },
+        {
+          "name": "AF2L 3 - Front Right",
+          "algorithm": "R U' R' U F' L F L'"
+        },
+        {
+          "name": "AF2L 3 - Front Right",
+          "algorithm": "y' R' U2 R2 U' R'"
+        },
+        {
+          "name": "AF2L 3 - Front Right",
+          "algorithm": "y' R' U' R2 U2 R'"
+        },
+        {
+          "name": "AF2L 3 - Front Left",
+          "algorithm": "L' U' L2 U2 L'"
+        },
+        {
+          "name": "AF2L 3 - Front Left",
+          "algorithm": "L' U2 L2 U' L'"
+        },
+        {
+          "name": "AF2L 3 - Back Left",
+          "algorithm": "y R' U' R U' R U' R'"
+        },
+        {
+          "name": "AF2L 3 - Back Left",
+          "algorithm": "L U' L' y' U2 L U' L'"
+        },
+        {
+          "name": "AF2L 3 - Back Left",
+          "algorithm": "y R' U' R2 U2 R'"
+        },
+        {
+          "name": "AF2L 3 - Back Left",
+          "algorithm": "y' L' U' L2 U2 L'"
+        },
+        {
+          "name": "AF2L 3 - Back Right",
+          "algorithm": "R' U' R2 U2 R'"
+        },
+        {
+          "name": "AF2L 3 - Back Right",
+          "algorithm": "R' U2 R2 U' R'"
+        },
+        {
+          "name": "AF2L 4 - Front Right",
+          "algorithm": "F R' F' R U R' U2 R"
+        },
+        {
+          "name": "AF2L 4 - Front Right",
+          "algorithm": "R U R' U2 f R f'"
+        },
+        {
+          "name": "AF2L 4 - Front Right",
+          "algorithm": "R U R' U2 S U' R' U R S'"
+        },
+        {
+          "name": "AF2L 4 - Front Right",
+          "algorithm": "y U2 L' U L U' R U R'"
+        },
+        {
+          "name": "AF2L 4 - Front Left",
+          "algorithm": "U2 L' U L U' R U R'"
+        },
+        {
+          "name": "AF2L 4 - Front Left",
+          "algorithm": "F U F' U2 R U R'"
+        },
+        {
+          "name": "AF2L 4 - Front Left",
+          "algorithm": "U' F U' R U R2 F' R"
+        },
+        {
+          "name": "AF2L 4 - Front Left",
+          "algorithm": "y' R U R' U2 y R U R'"
+        },
+        {
+          "name": "AF2L 4 - Back Left",
+          "algorithm": "B L' B' L U L' U2 L"
+        },
+        {
+          "name": "AF2L 4 - Back Left",
+          "algorithm": "L U L' U2 F U F'"
+        },
+        {
+          "name": "AF2L 4 - Back Left",
+          "algorithm": "L U L' y U2 L U L'"
+        },
+        {
+          "name": "AF2L 4 - Back Left",
+          "algorithm": "L U L' y' U2 R U R'"
+        },
+        {
+          "name": "AF2L 4 - Back Right",
+          "algorithm": "U2 R' U R U' L U L'"
+        },
+        {
+          "name": "AF2L 5 - Front Right",
+          "algorithm": "R U R' U L U L'"
+        },
+        {
+          "name": "AF2L 5 - Front Right",
+          "algorithm": "U' R U2 M' B r'"
+        },
+        {
+          "name": "AF2L 5 - Front Right",
+          "algorithm": "U' R U2 R' L U L'"
+        },
+        {
+          "name": "AF2L 5 - Front Right",
+          "algorithm": "y U2 L' U L U2 f R f'"
+        },
+        {
+          "name": "AF2L 5 - Front Left",
+          "algorithm": "L F' L' F R' U2 R"
+        },
+        {
+          "name": "AF2L 5 - Front Left",
+          "algorithm": "r U' r' F R' U2 R"
+        },
+        {
+          "name": "AF2L 5 - Front Left",
+          "algorithm": "y' R U R' U L U L'"
+        },
+        {
+          "name": "AF2L 5 - Front Left",
+          "algorithm": "y' U' R U2 R' L U L'"
+        },
+        {
+          "name": "AF2L 5 - Back Left",
+          "algorithm": "L U L' U R U R'"
+        },
+        {
+          "name": "AF2L 5 - Back Right",
+          "algorithm": "U2 R' U R U2 F U F'"
+        },
+        {
+          "name": "AF2L 5 - Back Right",
+          "algorithm": "y R U R' U L U L'"
+        },
+        {
+          "name": "AF2L 5 - Back Right",
+          "algorithm": "U2 R' U R y' U2 R U R'"
+        },
+        {
+          "name": "AF2L 6 - Front Right",
+          "algorithm": "R U R' F U F'"
+        },
+        {
+          "name": "AF2L 6 - Front Right",
+          "algorithm": "F R' F' R L' U L"
+        },
+        {
+          "name": "AF2L 6 - Front Right",
+          "algorithm": "R U R' b L b'"
+        },
+        {
+          "name": "AF2L 6 - Front Right",
+          "algorithm": "R U R' y L U L'"
+        },
+        {
+          "name": "AF2L 6 - Front Left",
+          "algorithm": "U2 L' U L U L U L'"
+        },
+        {
+          "name": "AF2L 6 - Front Left",
+          "algorithm": "F U F' L U L'"
+        },
+        {
+          "name": "AF2L 6 - Front Left",
+          "algorithm": "L F' L' S' L f"
+        },
+        {
+          "name": "AF2L 6 - Front Left",
+          "algorithm": "L' U L U L' U' L2 U L'"
+        },
+        {
+          "name": "AF2L 6 - Back Left",
+          "algorithm": "L U L' f R f'"
+        },
+        {
+          "name": "AF2L 6 - Back Left",
+          "algorithm": "y U2 R' U R U R U R'"
+        },
+        {
+          "name": "AF2L 6 - Back Left",
+          "algorithm": "L U L' y' L U L'"
+        },
+        {
+          "name": "AF2L 6 - Back Left",
+          "algorithm": "B L' B' L R' U R"
+        },
+        {
+          "name": "AF2L 6 - Back Right",
+          "algorithm": "U2 R' U R U R U R'"
+        },
+        {
+          "name": "AF2L 6 - Back Right",
+          "algorithm": "y R U R' F U F'"
+        },
+        {
+          "name": "AF2L 6 - Back Right",
+          "algorithm": "f R f' R U R'"
+        },
+        {
+          "name": "AF2L 7 - Front Right",
+          "algorithm": "U' F' U' f R S'"
+        },
+        {
+          "name": "AF2L 7 - Front Right",
+          "algorithm": "y U' L' U' L R U R'"
+        },
+        {
+          "name": "AF2L 7 - Front Right",
+          "algorithm": "R U' R' U' R U' R' f R f'"
+        },
+        {
+          "name": "AF2L 7 - Front Right",
+          "algorithm": "F R' F' U R U' R' U' R"
+        },
+        {
+          "name": "AF2L 7 - Front Left",
+          "algorithm": "U' L' U L R U' R'"
+        },
+        {
+          "name": "AF2L 7 - Front Left",
+          "algorithm": "U' L' U' L R U R'"
+        },
+        {
+          "name": "AF2L 7 - Back Left",
+          "algorithm": "U' f' r' D r S"
+        },
+        {
+          "name": "AF2L 7 - Back Left",
+          "algorithm": "y' U' L' U L R U' R'"
+        },
+        {
+          "name": "AF2L 7 - Back Left",
+          "algorithm": "U' f' L' F L S"
+        },
+        {
+          "name": "AF2L 7 - Back Right",
+          "algorithm": "U' R' U R L U' L'"
+        },
+        {
+          "name": "AF2L 7 - Back Right",
+          "algorithm": "U' R' U' R L U L'"
+        },
+        {
+          "name": "AF2L 8 - Front Right",
+          "algorithm": "U' F' U2 L U L' F"
+        },
+        {
+          "name": "AF2L 8 - Front Right",
+          "algorithm": "U' R' F R F' U2 L U L'"
+        },
+        {
+          "name": "AF2L 8 - Front Right",
+          "algorithm": "y' U R' U2 R F U F'"
+        },
+        {
+          "name": "AF2L 8 - Front Right",
+          "algorithm": "R U' R' U L U' L' U L U L'"
+        },
+        {
+          "name": "AF2L 8 - Front Left",
+          "algorithm": "U L' U2 L f R f'"
+        },
+        {
+          "name": "AF2L 8 - Front Left",
+          "algorithm": "F U2 R U R2 U' R F'"
+        },
+        {
+          "name": "AF2L 8 - Front Left",
+          "algorithm": "U' L' U' L d' R U R'"
+        },
+        {
+          "name": "AF2L 8 - Front Left",
+          "algorithm": "U' L' U L d' R U' R'"
+        },
+        {
+          "name": "AF2L 8 - Back Left",
+          "algorithm": "R D' R' U R U D R'"
+        },
+        {
+          "name": "AF2L 8 - Back Left",
+          "algorithm": "y' U' L' U L y' L U2 L'"
+        },
+        {
+          "name": "AF2L 8 - Back Left",
+          "algorithm": "y U' R' U R y' R U2 R'"
+        },
+        {
+          "name": "AF2L 8 - Back Left",
+          "algorithm": "y U' R' U R y L U2 L'"
+        },
+        {
+          "name": "AF2L 8 - Back Right",
+          "algorithm": "U' R' U R U2 F' r U r'"
+        },
+        {
+          "name": "AF2L 8 - Back Right",
+          "algorithm": "U' R' U' R d' L U L'"
+        },
+        {
+          "name": "AF2L 8 - Back Right",
+          "algorithm": "U' R' U R d' L U' L'"
+        },
+        {
+          "name": "AF2L 8 - Back Right",
+          "algorithm": "U' R' U R F U2 F'"
+        },
+        {
+          "name": "AF2L 9 - Front Right",
+          "algorithm": "y' U R' U2 R U' R U R'"
+        },
+        {
+          "name": "AF2L 9 - Front Right",
+          "algorithm": "U R' F' R F' R' F R"
+        },
+        {
+          "name": "AF2L 9 - Front Right",
+          "algorithm": "U R' F R F' R U' R' U' L' U' L"
+        },
+        {
+          "name": "AF2L 9 - Front Right",
+          "algorithm": "y U L' U2 L U' L U L'"
+        },
+        {
+          "name": "AF2L 9 - Front Left",
+          "algorithm": "U L' U2 L U' L U L'"
+        },
+        {
+          "name": "AF2L 9 - Front Left",
+          "algorithm": "U' L' U L U2 L U' L'"
+        },
+        {
+          "name": "AF2L 9 - Front Left",
+          "algorithm": "y' U' R' F R F' U F U F'"
+        },
+        {
+          "name": "AF2L 9 - Front Left",
+          "algorithm": "U' L' U L U' L U2 L'"
+        },
+        {
+          "name": "AF2L 9 - Back Left",
+          "algorithm": "U L' B' L B' L' B L"
+        },
+        {
+          "name": "AF2L 9 - Back Left",
+          "algorithm": "y' U' L' U L U2 L U' L'"
+        },
+        {
+          "name": "AF2L 9 - Back Right",
+          "algorithm": "U R' U2 R U' R U R'"
+        },
+        {
+          "name": "AF2L 9 - Back Right",
+          "algorithm": "U' R' U R U2 R U' R'"
+        },
+        {
+          "name": "AF2L 1a - Front Right",
+          "algorithm": "U' R U R2 U' R U' R' U R"
+        },
+        {
+          "name": "AF2L 1a - Front Right",
+          "algorithm": "U2 R U' R' U' R' U' R"
+        },
+        {
+          "name": "AF2L 1a - Front Right",
+          "algorithm": "R' F R F' y R U' R'"
+        },
+        {
+          "name": "AF2L 1a - Front Right",
+          "algorithm": "F' U' F R' U' R"
+        },
+        {
+          "name": "AF2L 1a - Front Left",
+          "algorithm": "L' U' L F' U' F"
+        },
+        {
+          "name": "AF2L 1a - Front Left",
+          "algorithm": "U L' U' F' U' F L"
+        },
+        {
+          "name": "AF2L 1a - Front Left",
+          "algorithm": "L' U' L y' R' U' R"
+        },
+        {
+          "name": "AF2L 1a - Front Left",
+          "algorithm": "F' L F L' R U' R'"
+        },
+        {
+          "name": "AF2L 1a - Back Left",
+          "algorithm": "f' L' f L' U' L"
+        },
+        {
+          "name": "AF2L 1a - Back Left",
+          "algorithm": "y' L' U' L F' U' F"
+        },
+        {
+          "name": "AF2L 1a - Back Left",
+          "algorithm": "y R' U' R y R' U' R"
+        },
+        {
+          "name": "AF2L 1a - Back Left",
+          "algorithm": "y' L' U' L y L' U' L"
+        },
+        {
+          "name": "AF2L 1a - Back Right",
+          "algorithm": "R' U' R f' L' f"
+        },
+        {
+          "name": "AF2L 1a - Back Right",
+          "algorithm": "R' U' R y R' U' R"
+        },
+        {
+          "name": "AF2L 1a - Back Right",
+          "algorithm": "B' R B R' L U' L'"
+        },
+        {
+          "name": "AF2L 2a - Front Right",
+          "algorithm": "R' F R F' L U2 L'"
+        },
+        {
+          "name": "AF2L 2a - Front Right",
+          "algorithm": "R' F R F' U' L U' L'"
+        },
+        {
+          "name": "AF2L 2a - Front Right",
+          "algorithm": "U2 R U' R' U2 B' U' B"
+        },
+        {
+          "name": "AF2L 2a - Front Right",
+          "algorithm": "F' U' F U' y2 F' U' F"
+        },
+        {
+          "name": "AF2L 2a - Front Left",
+          "algorithm": "L' U' L U' R' U' R"
+        },
+        {
+          "name": "AF2L 2a - Back Left",
+          "algorithm": "L' B L B' R U2 R'"
+        },
+        {
+          "name": "AF2L 2a - Back Left",
+          "algorithm": "y' L' U' L U' R' U' R"
+        },
+        {
+          "name": "AF2L 2a - Back Left",
+          "algorithm": "y R' U' R U' L' U' L"
+        },
+        {
+          "name": "AF2L 2a - Back Left",
+          "algorithm": "U2 L U' L' y' U2 R' U' R"
+        },
+        {
+          "name": "AF2L 2a - Back Right",
+          "algorithm": "R' U' R U' L' U' L"
+        },
+        {
+          "name": "AF2L 3a - Front Right",
+          "algorithm": "R' F R2 U' R' U F'"
+        },
+        {
+          "name": "AF2L 3a - Front Right",
+          "algorithm": "R' F R F' d R' F R F'"
+        },
+        {
+          "name": "AF2L 3a - Front Right",
+          "algorithm": "F' U' F U2 L' U' L"
+        },
+        {
+          "name": "AF2L 3a - Front Right",
+          "algorithm": "U2 R U' R' U L' U' L"
+        },
+        {
+          "name": "AF2L 3a - Front Left",
+          "algorithm": "F' L F L' U2 L U' L'"
+        },
+        {
+          "name": "AF2L 3a - Front Left",
+          "algorithm": "L' U' L y U2 R' U' R"
+        },
+        {
+          "name": "AF2L 3a - Front Left",
+          "algorithm": "L' U' L y' U2 L' U' L"
+        },
+        {
+          "name": "AF2L 3a - Front Left",
+          "algorithm": "L' U' L U2 f' L' f"
+        },
+        {
+          "name": "AF2L 3a - Back Left",
+          "algorithm": "f' L' f U2 R' U' R"
+        },
+        {
+          "name": "AF2L 3a - Back Left",
+          "algorithm": "y R' U' R y' U2 R' U' R"
+        },
+        {
+          "name": "AF2L 3a - Back Left",
+          "algorithm": "y' L' U' L y U2 R' U' R"
+        },
+        {
+          "name": "AF2L 3a - Back Left",
+          "algorithm": "U2 L U' L' U R' U' R"
+        },
+        {
+          "name": "AF2L 3a - Back Right",
+          "algorithm": "B' R B R' U2 R U' R'"
+        },
+        {
+          "name": "AF2L 3a - Back Right",
+          "algorithm": "R' U' R U2 F' U' F"
+        },
+        {
+          "name": "AF2L 3a - Back Right",
+          "algorithm": "R' U' R y U2 L' U' L"
+        },
+        {
+          "name": "AF2L 3a - Back Right",
+          "algorithm": "R' U' R y' U2 R' U' R"
+        },
+        {
+          "name": "AF2L 4a - Front Right",
+          "algorithm": "U R U R2 U2 R"
+        },
+        {
+          "name": "AF2L 4a - Front Right",
+          "algorithm": "U R U2 R2 U R"
+        },
+        {
+          "name": "AF2L 4a - Front Right",
+          "algorithm": "U R U' R' S R2 S'"
+        },
+        {
+          "name": "AF2L 4a - Front Left",
+          "algorithm": "U L' U L y' U2 R' U R"
+        },
+        {
+          "name": "AF2L 4a - Front Left",
+          "algorithm": "U L' U L y U2 L' U L"
+        },
+        {
+          "name": "AF2L 4a - Front Left",
+          "algorithm": "U L' U L U' F R' F' R"
+        },
+        {
+          "name": "AF2L 4a - Back Left",
+          "algorithm": "U L U L2 U2 L"
+        },
+        {
+          "name": "AF2L 4a - Back Left",
+          "algorithm": "U L U2 L2 U L"
+        },
+        {
+          "name": "AF2L 4a - Back Right",
+          "algorithm": "U R' U R y U2 R' U R"
+        },
+        {
+          "name": "AF2L 4a - Back Right",
+          "algorithm": "U R' U R y U R' U2 R"
+        },
+        {
+          "name": "AF2L 4a - Back Right",
+          "algorithm": "U R' U R y' U2 L' U L"
+        },
+        {
+          "name": "AF2L 5a - Front Right",
+          "algorithm": "U l U' F2 U l'"
+        },
+        {
+          "name": "AF2L 5a - Front Right",
+          "algorithm": "y U L' U L R' U2 R"
+        },
+        {
+          "name": "AF2L 5a - Front Right",
+          "algorithm": "U R B' U2 B R'"
+        },
+        {
+          "name": "AF2L 5a - Front Right",
+          "algorithm": "U R U R' y R' U R"
+        },
+        {
+          "name": "AF2L 5a - Front Left",
+          "algorithm": "U L' U L R' U2 R"
+        },
+        {
+          "name": "AF2L 5a - Back Left",
+          "algorithm": "y' U L' U L R' U2 R"
+        },
+        {
+          "name": "AF2L 5a - Back Left",
+          "algorithm": "y U R' U R L' U2 L"
+        },
+        {
+          "name": "AF2L 5a - Back Left",
+          "algorithm": "U L U L' F' U F"
+        },
+        {
+          "name": "AF2L 5a - Back Left",
+          "algorithm": "U L U L' y' R' U R"
+        },
+        {
+          "name": "AF2L 5a - Back Right",
+          "algorithm": "U R' U R L' U2 L"
+        },
+        {
+          "name": "AF2L 6a - Front Right",
+          "algorithm": "U R U R' U' L' U L"
+        },
+        {
+          "name": "AF2L 6a - Front Right",
+          "algorithm": "y U L' U L f' L f"
+        },
+        {
+          "name": "AF2L 6a - Front Right",
+          "algorithm": "U R L' U L R'"
+        },
+        {
+          "name": "AF2L 6a - Front Right",
+          "algorithm": "U M F M'"
+        },
+        {
+          "name": "AF2L 6a - Front Left",
+          "algorithm": "U L' U L f' L f"
+        },
+        {
+          "name": "AF2L 6a - Front Left",
+          "algorithm": "U S' L S"
+        },
+        {
+          "name": "AF2L 6a - Front Left",
+          "algorithm": "U L' U L y R' U R"
+        },
+        {
+          "name": "AF2L 6a - Front Left",
+          "algorithm": "y U L R' U R L'"
+        },
+        {
+          "name": "AF2L 6a - Back Left",
+          "algorithm": "U L R' U R L'"
+        },
+        {
+          "name": "AF2L 6a - Back Left",
+          "algorithm": "U L R' U L' R"
+        },
+        {
+          "name": "AF2L 6a - Back Right",
+          "algorithm": "U S R S'"
+        },
+        {
+          "name": "AF2L 6a - Back Right",
+          "algorithm": "y U R L' U L R'"
+        },
+        {
+          "name": "AF2L 6a - Back Right",
+          "algorithm": "y' U L R' U R L'"
+        },
+        {
+          "name": "AF2L 7a - Front Right",
+          "algorithm": "R U2 R' U R' U' R"
+        },
+        {
+          "name": "AF2L 7a - Front Right",
+          "algorithm": "U2 R U' R' U2 R' U R"
+        },
+        {
+          "name": "AF2L 7a - Front Right",
+          "algorithm": "U2 R U' R' U R' U2 R"
+        },
+        {
+          "name": "AF2L 7a - Front Right",
+          "algorithm": "U2 R U R' U2 R' U' R"
+        },
+        {
+          "name": "AF2L 7a - Front Left",
+          "algorithm": "y' U2 R U' R' U2 R' U R"
+        },
+        {
+          "name": "AF2L 7a - Front Left",
+          "algorithm": "y' U2 R U' R' U R' U2 R"
+        },
+        {
+          "name": "AF2L 7a - Front Left",
+          "algorithm": "L F L' F L F' L'"
+        },
+        {
+          "name": "AF2L 7a - Front Left",
+          "algorithm": "U2 L F' L' F y' U' R' U' R"
+        },
+        {
+          "name": "AF2L 7a - Back Left",
+          "algorithm": "L U2 L' U L' U' L"
+        },
+        {
+          "name": "AF2L 7a - Back Left",
+          "algorithm": "U2 L U' L' U2 L' U L"
+        },
+        {
+          "name": "AF2L 7a - Back Left",
+          "algorithm": "U2 L U' L' U L' U2 L"
+        },
+        {
+          "name": "AF2L 7a - Back Right",
+          "algorithm": "R B R' B R B' R'"
+        },
+        {
+          "name": "AF2L 7a - Back Right",
+          "algorithm": "l U R' U R U' l'"
+        },
+        {
+          "name": "AF2L 7a - Back Right",
+          "algorithm": "y' U2 L U' L' U2 L' U L"
+        },
+        {
+          "name": "AF2L 7a - Back Right",
+          "algorithm": "y U2 R U' R' U2 R' U R"
+        },
+        {
+          "name": "AF2L 8a - Front Right",
+          "algorithm": "U2 R U' R' d L' U L"
+        },
+        {
+          "name": "AF2L 8a - Front Right",
+          "algorithm": "R U2 R' f' L' f"
+        },
+        {
+          "name": "AF2L 8a - Front Right",
+          "algorithm": "R U2 R' y R' U' R"
+        },
+        {
+          "name": "AF2L 8a - Front Right",
+          "algorithm": "U2 R U' R' y R' U2 R"
+        },
+        {
+          "name": "AF2L 8a - Front Left",
+          "algorithm": "U2 L F' L' F U2 R' U' R"
+        },
+        {
+          "name": "AF2L 8a - Front Left",
+          "algorithm": "U R' D R U' R' U' D' R"
+        },
+        {
+          "name": "AF2L 8a - Front Left",
+          "algorithm": "U2 F U2 R' U' R F'"
+        },
+        {
+          "name": "AF2L 8a - Front Left",
+          "algorithm": "y U2 L U' L' y L' U2 L"
+        },
+        {
+          "name": "AF2L 8a - Back Left",
+          "algorithm": "U2 L U' L' y L' U2 L"
+        },
+        {
+          "name": "AF2L 8a - Back Left",
+          "algorithm": "U2 L U' L' y' R' U2 R"
+        },
+        {
+          "name": "AF2L 8a - Back Right",
+          "algorithm": "U L' D L U' L' U' D' L"
+        },
+        {
+          "name": "AF2L 8a - Back Right",
+          "algorithm": "y U2 R U' R' y R' U2 R"
+        },
+        {
+          "name": "AF2L 8a - Back Right",
+          "algorithm": "U2 f R f' U L' U' L"
+        },
+        {
+          "name": "AF2L 9a - Front Right",
+          "algorithm": "U2 R U' R' L' U L"
+        },
+        {
+          "name": "AF2L 9a - Front Right",
+          "algorithm": "R U2 R' U' L' U' L"
+        },
+        {
+          "name": "AF2L 9a - Front Left",
+          "algorithm": "y U2 L U' L' R' U R"
+        },
+        {
+          "name": "AF2L 9a - Front Left",
+          "algorithm": "y' U2 R U' R' L' U L"
+        },
+        {
+          "name": "AF2L 9a - Back Left",
+          "algorithm": "U2 L U' L' R' U R"
+        },
+        {
+          "name": "AF2L 9a - Back Left",
+          "algorithm": "L U2 L' U' R' U' R"
+        },
+        {
+          "name": "AF2L 9a - Back Right",
+          "algorithm": "y U2 R U' R' L' U L"
+        },
+        {
+          "name": "AF2L 9a - Back Right",
+          "algorithm": "y' U2 L U' L' R' U R"
+        }
+      ]
+    },
+    {
+      "subset": "Trapped Edge",
+      "algorithms": [
+        {
+          "name": "AF2L 10 - Front Right",
+          "algorithm": "U' R U R2 U' R"
+        },
+        {
+          "name": "AF2L 10 - Front Right",
+          "algorithm": "U2 R U R' U2 R' U R"
+        },
+        {
+          "name": "AF2L 10 - Front Right",
+          "algorithm": "y U' L F2 L' F2"
+        },
+        {
+          "name": "AF2L 10 - Front Right",
+          "algorithm": "y U' r U2 r' F2"
+        },
+        {
+          "name": "AF2L 10 - Front Left",
+          "algorithm": "U' F U F2 U' F"
+        },
+        {
+          "name": "AF2L 10 - Front Left",
+          "algorithm": "y U' L U L2 U' L"
+        },
+        {
+          "name": "AF2L 10 - Front Left",
+          "algorithm": "U' L F2 L' F2"
+        },
+        {
+          "name": "AF2L 10 - Front Left",
+          "algorithm": "y' U' R U R2 U' R"
+        },
+        {
+          "name": "AF2L 10 - Back Left",
+          "algorithm": "U' L U L2 U' L"
+        },
+        {
+          "name": "AF2L 10 - Back Right",
+          "algorithm": "R' U R L U' L' U L U L'"
+        },
+        {
+          "name": "AF2L 10 - Back Right",
+          "algorithm": "y U' R U R2 U' R"
+        },
+        {
+          "name": "AF2L 10 - Back Right",
+          "algorithm": "y' U' L U L2 U' L"
+        },
+        {
+          "name": "AF2L 11 - Front Right",
+          "algorithm": "U' R U' R' L U' L'"
+        },
+        {
+          "name": "AF2L 11 - Front Right",
+          "algorithm": "U' R U' M' B' r'"
+        },
+        {
+          "name": "AF2L 11 - Front Right",
+          "algorithm": "U' R U' R' U L U2 L'"
+        },
+        {
+          "name": "AF2L 11 - Front Left",
+          "algorithm": "U L' U2 L U R' U' R"
+        },
+        {
+          "name": "AF2L 11 - Front Left",
+          "algorithm": "U' L' U' L R' U' R"
+        },
+        {
+          "name": "AF2L 11 - Front Left",
+          "algorithm": "U' L' U' R' U' R L"
+        },
+        {
+          "name": "AF2L 11 - Back Left",
+          "algorithm": "U' L U' L' R U' R'"
+        },
+        {
+          "name": "AF2L 11 - Back Left",
+          "algorithm": "y U' R' U' L' U' L R"
+        },
+        {
+          "name": "AF2L 11 - Back Right",
+          "algorithm": "U' R' U' R L' U' L"
+        },
+        {
+          "name": "AF2L 12 - Front Right",
+          "algorithm": "U2 R U R' L' U L"
+        },
+        {
+          "name": "AF2L 12 - Front Right",
+          "algorithm": "U' R U R2 F R U F'"
+        },
+        {
+          "name": "AF2L 12 - Front Right",
+          "algorithm": "U' R U R' U2 L' U' L"
+        },
+        {
+          "name": "AF2L 12 - Front Right",
+          "algorithm": "F U' F' U2 R U' R' L' U' L"
+        },
+        {
+          "name": "AF2L 12 - Front Left",
+          "algorithm": "U' L U L2 U' L2 U L'"
+        },
+        {
+          "name": "AF2L 12 - Front Left",
+          "algorithm": "L' U' L U' L' U L U' L U2 L'"
+        },
+        {
+          "name": "AF2L 12 - Front Left",
+          "algorithm": "U' L S U2 S' L'"
+        },
+        {
+          "name": "AF2L 12 - Front Left",
+          "algorithm": "y' U' R U R2 F R U R' F' R"
+        },
+        {
+          "name": "AF2L 12 - Back Left",
+          "algorithm": "U' L U L' U2 R' U' R"
+        },
+        {
+          "name": "AF2L 12 - Back Left",
+          "algorithm": "U2 L U' L' R' U' R"
+        },
+        {
+          "name": "AF2L 12 - Back Left",
+          "algorithm": "U2 L U L' R' U R"
+        },
+        {
+          "name": "AF2L 12 - Back Right",
+          "algorithm": "U' R S' U2 S R'"
+        },
+        {
+          "name": "AF2L 12 - Back Right",
+          "algorithm": "U2 R U2 R2 U' R2 U R'"
+        },
+        {
+          "name": "AF2L 12 - Back Right",
+          "algorithm": "U' R U R2 U' R2 U R'"
+        },
+        {
+          "name": "AF2L 13 - Front Right",
+          "algorithm": "U R' F R F' R' U' R"
+        },
+        {
+          "name": "AF2L 13 - Front Right",
+          "algorithm": "U R U' R' U R U' R' f R' f'"
+        },
+        {
+          "name": "AF2L 13 - Front Right",
+          "algorithm": "U R U' R' U S R' S'"
+        },
+        {
+          "name": "AF2L 13 - Front Right",
+          "algorithm": "U R U' R' U R U' R' y' L U' L'"
+        },
+        {
+          "name": "AF2L 13 - Front Left",
+          "algorithm": "U' L F' L2 U L U2 F"
+        },
+        {
+          "name": "AF2L 13 - Front Left",
+          "algorithm": "d R' F R F' R' U' R"
+        },
+        {
+          "name": "AF2L 13 - Front Left",
+          "algorithm": "U' L F' L' F U2 R U R'"
+        },
+        {
+          "name": "AF2L 13 - Back Left",
+          "algorithm": "U r' U L U' x L' U' L"
+        },
+        {
+          "name": "AF2L 13 - Back Left",
+          "algorithm": "U L U' L' U S' L' S"
+        },
+        {
+          "name": "AF2L 13 - Back Left",
+          "algorithm": "y' U' L F' L' F U2 R U R'"
+        },
+        {
+          "name": "AF2L 13 - Back Right",
+          "algorithm": "y U R' F R F' R' U' R"
+        },
+        {
+          "name": "AF2L 13 - Back Right",
+          "algorithm": "U' l U' R' U x U2 L U L'"
+        },
+        {
+          "name": "AF2L 13 - Back Right",
+          "algorithm": "U' R B' R2 U R U2 R B R'"
+        },
+        {
+          "name": "AF2L 14 - Front Right",
+          "algorithm": "U' F R' F' R U L U L'"
+        },
+        {
+          "name": "AF2L 14 - Front Right",
+          "algorithm": "U2 r2 U B2 U' r2"
+        },
+        {
+          "name": "AF2L 14 - Front Right",
+          "algorithm": "U2 L2 u L2 u' L2"
+        },
+        {
+          "name": "AF2L 14 - Front Right",
+          "algorithm": "U R U' R' U R U' R' L U2 L'"
+        },
+        {
+          "name": "AF2L 14 - Front Left",
+          "algorithm": "U2 R2 D' F2 D R2"
+        },
+        {
+          "name": "AF2L 14 - Front Left",
+          "algorithm": "U' L' U L U' L' U L R' U2 R"
+        },
+        {
+          "name": "AF2L 14 - Front Left",
+          "algorithm": "U2 R2 u' R2 u R2"
+        },
+        {
+          "name": "AF2L 14 - Front Left",
+          "algorithm": "L' U' L U L' U' L U' R' U' R"
+        },
+        {
+          "name": "AF2L 14 - Back Left",
+          "algorithm": "U2 R2 D B2 D' R2"
+        },
+        {
+          "name": "AF2L 14 - Back Left",
+          "algorithm": "U2 R2 u R2 u' R2"
+        },
+        {
+          "name": "AF2L 14 - Back Left",
+          "algorithm": "U L U' L' U L U' L' R U2 R'"
+        },
+        {
+          "name": "AF2L 14 - Back Left",
+          "algorithm": "L U L' U' L U L' U R U R'"
+        },
+        {
+          "name": "AF2L 14 - Back Right",
+          "algorithm": "U2 L2 D' B2 D L2"
+        },
+        {
+          "name": "AF2L 14 - Back Right",
+          "algorithm": "U2 r2 U' F2 U r2"
+        },
+        {
+          "name": "AF2L 14 - Back Right",
+          "algorithm": "U2 L2 u' L2 u L2"
+        },
+        {
+          "name": "AF2L 14 - Back Right",
+          "algorithm": "R' U' R U R' U' R U' L' U' L"
+        },
+        {
+          "name": "AF2L 15 - Front Right",
+          "algorithm": "U R' F R2 U' R' U2 F'"
+        },
+        {
+          "name": "AF2L 15 - Front Right",
+          "algorithm": "U R' F R F' U2 L' U' L"
+        },
+        {
+          "name": "AF2L 15 - Front Right",
+          "algorithm": "R U R' U' R U R' F U F'"
+        },
+        {
+          "name": "AF2L 15 - Front Right",
+          "algorithm": "U R' F R2 U' R' U2 R' F' R"
+        },
+        {
+          "name": "AF2L 15 - Front Left",
+          "algorithm": "U' L F' L' F L U L'"
+        },
+        {
+          "name": "AF2L 15 - Front Left",
+          "algorithm": "U' L' U L U' S' L S"
+        },
+        {
+          "name": "AF2L 15 - Back Left",
+          "algorithm": "y' U' L F' L' F L U L'"
+        },
+        {
+          "name": "AF2L 15 - Back Left",
+          "algorithm": "U' R' U' R2 u R u' R'"
+        },
+        {
+          "name": "AF2L 15 - Back Right",
+          "algorithm": "U' R' U R U' S R S'"
+        },
+        {
+          "name": "AF2L 15 - Back Right",
+          "algorithm": "y U R' F R F' U2 L' U' L"
+        },
+        {
+          "name": "AF2L 15 - Back Right",
+          "algorithm": "y U R' F R2 U' R' U2 F'"
+        },
+        {
+          "name": "AF2L 16 - Front Right",
+          "algorithm": "U' F' R' U' R F"
+        },
+        {
+          "name": "AF2L 16 - Front Right",
+          "algorithm": "d' R' u' R' u R"
+        },
+        {
+          "name": "AF2L 16 - Front Right",
+          "algorithm": "U' R U' R' r' U' R U M'"
+        },
+        {
+          "name": "AF2L 16 - Front Right",
+          "algorithm": "U' R U' R' B' R B R'"
+        },
+        {
+          "name": "AF2L 16 - Front Left",
+          "algorithm": "U' R' D' F' D R"
+        },
+        {
+          "name": "AF2L 16 - Front Left",
+          "algorithm": "U' R' u' R' u R"
+        },
+        {
+          "name": "AF2L 16 - Front Left",
+          "algorithm": "U' L' F' U' F L"
+        },
+        {
+          "name": "AF2L 16 - Front Left",
+          "algorithm": "U' r' D' F' D r"
+        },
+        {
+          "name": "AF2L 16 - Back Left",
+          "algorithm": "d' L' u' L' u L"
+        },
+        {
+          "name": "AF2L 16 - Back Left",
+          "algorithm": "U' L U' L' F' L F L'"
+        },
+        {
+          "name": "AF2L 16 - Back Right",
+          "algorithm": "U' R' U' R U f' L' f"
+        },
+        {
+          "name": "AF2L 16 - Back Right",
+          "algorithm": "U' L' u' L' u L"
+        },
+        {
+          "name": "AF2L 16 - Back Right",
+          "algorithm": "U' R' U' R y U R' U' R"
+        },
+        {
+          "name": "AF2L 16 - Back Right",
+          "algorithm": "y' U' F' D' L' D F"
+        },
+        {
+          "name": "AF2L 17 - Front Right",
+          "algorithm": "U2 R B' U' B R'"
+        },
+        {
+          "name": "AF2L 17 - Front Right",
+          "algorithm": "y U2 F R' U' R F'"
+        },
+        {
+          "name": "AF2L 17 - Front Right",
+          "algorithm": "U' R U R' U' f' L' f"
+        },
+        {
+          "name": "AF2L 17 - Front Right",
+          "algorithm": "U2 l U' F' U l'"
+        },
+        {
+          "name": "AF2L 17 - Front Left",
+          "algorithm": "U2 F R' U' R F'"
+        },
+        {
+          "name": "AF2L 17 - Front Left",
+          "algorithm": "U2 F U' F' U R' U' R"
+        },
+        {
+          "name": "AF2L 17 - Front Left",
+          "algorithm": "U2 L F' L' F R' U' R"
+        },
+        {
+          "name": "AF2L 17 - Front Left",
+          "algorithm": "U2 F U F' R' U2 R"
+        },
+        {
+          "name": "AF2L 17 - Back Left",
+          "algorithm": "U2 R d' R' U R F'"
+        },
+        {
+          "name": "AF2L 17 - Back Left",
+          "algorithm": "U2 L F' U' F L'"
+        },
+        {
+          "name": "AF2L 17 - Back Right",
+          "algorithm": "U2 f R' f' U L' U' L"
+        },
+        {
+          "name": "AF2L 17 - Back Right",
+          "algorithm": "U2 f U' R' U f'"
+        },
+        {
+          "name": "AF2L 17 - Back Right",
+          "algorithm": "U2 F U' R' U R F'"
+        },
+        {
+          "name": "AF2L 17 - Back Right",
+          "algorithm": "U2 f R f' L' U2 L"
+        },
+        {
+          "name": "AF2L 18 - Front Right",
+          "algorithm": "U F' U2 F L' U' L"
+        },
+        {
+          "name": "AF2L 18 - Front Right",
+          "algorithm": "U r' F' D' F D r"
+        },
+        {
+          "name": "AF2L 18 - Front Right",
+          "algorithm": "U' R U' R' F U2 F'"
+        },
+        {
+          "name": "AF2L 18 - Front Right",
+          "algorithm": "U' R U' R' U2 F' L F L'"
+        },
+        {
+          "name": "AF2L 18 - Front Left",
+          "algorithm": "U L' U2 L f' L' f"
+        },
+        {
+          "name": "AF2L 18 - Front Left",
+          "algorithm": "U' F U' F' L U2 L'"
+        },
+        {
+          "name": "AF2L 18 - Front Left",
+          "algorithm": "U' L' U' L d' R' U' R"
+        },
+        {
+          "name": "AF2L 18 - Front Left",
+          "algorithm": "F U R U' R' U' R U' R' L U2 L' F'"
+        },
+        {
+          "name": "AF2L 18 - Back Left",
+          "algorithm": "U' L U' L' R2 F R F' R"
+        },
+        {
+          "name": "AF2L 18 - Back Left",
+          "algorithm": "U' L U' L' U' f R' f'"
+        },
+        {
+          "name": "AF2L 18 - Back Left",
+          "algorithm": "U' L U' L' d' R U' R'"
+        },
+        {
+          "name": "AF2L 18 - Back Left",
+          "algorithm": "U' L U' L' y R U2 R'"
+        },
+        {
+          "name": "AF2L 18 - Back Right",
+          "algorithm": "U R' U2 R F' U' F"
+        },
+        {
+          "name": "AF2L 18 - Back Right",
+          "algorithm": "U' R' U' R d' L' U' L"
+        },
+        {
+          "name": "AF2L 18 - Back Right",
+          "algorithm": "U' f R' f' U' R U' R'"
+        },
+        {
+          "name": "AF2L 18 - Back Right",
+          "algorithm": "U' R' U' R U' F' U' F"
+        },
+        {
+          "name": "AF2L 19 - Front Right",
+          "algorithm": "U' R U2 R' f R f'"
+        },
+        {
+          "name": "AF2L 19 - Front Right",
+          "algorithm": "R' F R F' R U2 R2 U R"
+        },
+        {
+          "name": "AF2L 19 - Front Right",
+          "algorithm": "U R U R' U f R f'"
+        },
+        {
+          "name": "AF2L 19 - Front Right",
+          "algorithm": "U R U R' U y R U R'"
+        },
+        {
+          "name": "AF2L 19 - Front Left",
+          "algorithm": "U' F U2 F' R U R'"
+        },
+        {
+          "name": "AF2L 19 - Front Left",
+          "algorithm": "U' R U F U' F' R'"
+        },
+        {
+          "name": "AF2L 19 - Front Left",
+          "algorithm": "U F U2 R U R2 F' R"
+        },
+        {
+          "name": "AF2L 19 - Front Left",
+          "algorithm": "U L' U L F' U2 F"
+        },
+        {
+          "name": "AF2L 19 - Back Left",
+          "algorithm": "U' L U2 L' F U F'"
+        },
+        {
+          "name": "AF2L 19 - Back Left",
+          "algorithm": "U L U L' d R U R'"
+        },
+        {
+          "name": "AF2L 19 - Back Left",
+          "algorithm": "U f' L f L' U2 L"
+        },
+        {
+          "name": "AF2L 19 - Back Left",
+          "algorithm": "U L U L' U F U F'"
+        },
+        {
+          "name": "AF2L 19 - Back Right",
+          "algorithm": "U R' U R U f' L f"
+        },
+        {
+          "name": "AF2L 19 - Back Right",
+          "algorithm": "U R' U R d L' U L"
+        },
+        {
+          "name": "AF2L 19 - Back Right",
+          "algorithm": "U R' U R y R' U2 R"
+        },
+        {
+          "name": "AF2L 19 - Back Right",
+          "algorithm": "U R' U R y' L' U2 L"
+        },
+        {
+          "name": "AF2L 20 - Front Right",
+          "algorithm": "U R U R' L U L'"
+        },
+        {
+          "name": "AF2L 20 - Front Right",
+          "algorithm": "U' R U2 R' U' L U L'"
+        },
+        {
+          "name": "AF2L 20 - Front Right",
+          "algorithm": "U R U M' B r'"
+        },
+        {
+          "name": "AF2L 20 - Front Left",
+          "algorithm": "U L' U L R' U R"
+        },
+        {
+          "name": "AF2L 20 - Back Left",
+          "algorithm": "U L U L' R U R'"
+        },
+        {
+          "name": "AF2L 20 - Back Left",
+          "algorithm": "U' L U2 L' U' R U R'"
+        },
+        {
+          "name": "AF2L 20 - Back Right",
+          "algorithm": "U R' U R L' U L"
+        },
+        {
+          "name": "AF2L 21 - Front Right",
+          "algorithm": "U R F U F' R'"
+        },
+        {
+          "name": "AF2L 21 - Front Right",
+          "algorithm": "U L u L u' L'"
+        },
+        {
+          "name": "AF2L 21 - Front Right",
+          "algorithm": "U L D F D' L'"
+        },
+        {
+          "name": "AF2L 21 - Front Right",
+          "algorithm": "U R U R' U' F U F'"
+        },
+        {
+          "name": "AF2L 21 - Front Left",
+          "algorithm": "U F L U L' F'"
+        },
+        {
+          "name": "AF2L 21 - Front Left",
+          "algorithm": "U L' U L R B L' B' M' x'"
+        },
+        {
+          "name": "AF2L 21 - Front Left",
+          "algorithm": "d L u L u' L'"
+        },
+        {
+          "name": "AF2L 21 - Front Left",
+          "algorithm": "U L' U L B L' B' L"
+        },
+        {
+          "name": "AF2L 21 - Back Left",
+          "algorithm": "U L U L' U' f R f'"
+        },
+        {
+          "name": "AF2L 21 - Back Left",
+          "algorithm": "U R u R u' R'"
+        },
+        {
+          "name": "AF2L 21 - Back Left",
+          "algorithm": "U' L U2 L' y' U2 L U L'"
+        },
+        {
+          "name": "AF2L 21 - Back Left",
+          "algorithm": "U L U L' y' U' L U L'"
+        },
+        {
+          "name": "AF2L 21 - Back Right",
+          "algorithm": "U F D R D' F'"
+        },
+        {
+          "name": "AF2L 21 - Back Right",
+          "algorithm": "U R' U R U' F' U F"
+        },
+        {
+          "name": "AF2L 21 - Back Right",
+          "algorithm": "d R u R u' R'"
+        },
+        {
+          "name": "AF2L 21 - Back Right",
+          "algorithm": "U R' U R F R' F' R"
+        },
+        {
+          "name": "AF2L 22 - Front Right",
+          "algorithm": "R U' R2 U R"
+        },
+        {
+          "name": "AF2L 22 - Front Right",
+          "algorithm": "y M F2 M'"
+        },
+        {
+          "name": "AF2L 22 - Front Right",
+          "algorithm": "S R2 S'"
+        },
+        {
+          "name": "AF2L 22 - Front Right",
+          "algorithm": "R U2 R2 U2 R"
+        },
+        {
+          "name": "AF2L 22 - Front Left",
+          "algorithm": "R L' U2 L R'"
+        },
+        {
+          "name": "AF2L 22 - Front Left",
+          "algorithm": "L' U L U2 R U' R'"
+        },
+        {
+          "name": "AF2L 22 - Front Left",
+          "algorithm": "F2 R' F2 R"
+        },
+        {
+          "name": "AF2L 22 - Back Left",
+          "algorithm": "L U' L2 U L"
+        },
+        {
+          "name": "AF2L 22 - Back Right",
+          "algorithm": "L R' U2 R L'"
+        },
+        {
+          "name": "AF2L 23 - Front Right",
+          "algorithm": "L F' U F L'"
+        },
+        {
+          "name": "AF2L 23 - Front Right",
+          "algorithm": "y' F R' U R F'"
+        },
+        {
+          "name": "AF2L 23 - Front Right",
+          "algorithm": "l F' U L' U' M'"
+        },
+        {
+          "name": "AF2L 23 - Front Right",
+          "algorithm": "R U2 R' y' L' U L"
+        },
+        {
+          "name": "AF2L 23 - Front Left",
+          "algorithm": "R' F U' F' R"
+        },
+        {
+          "name": "AF2L 23 - Front Left",
+          "algorithm": "r' F U' R U M'"
+        },
+        {
+          "name": "AF2L 23 - Front Left",
+          "algorithm": "L' U L y' U L U' L'"
+        },
+        {
+          "name": "AF2L 23 - Front Left",
+          "algorithm": "L' U L y U R U' R'"
+        },
+        {
+          "name": "AF2L 23 - Back Left",
+          "algorithm": "F' L U' L' F"
+        },
+        {
+          "name": "AF2L 23 - Back Left",
+          "algorithm": "R u R' U R u' R'"
+        },
+        {
+          "name": "AF2L 23 - Back Left",
+          "algorithm": "L U' L' d' L' U L"
+        },
+        {
+          "name": "AF2L 23 - Back Left",
+          "algorithm": "L U' L' y' U' R' U R"
+        },
+        {
+          "name": "AF2L 23 - Back Right",
+          "algorithm": "F R' U R F'"
+        },
+        {
+          "name": "AF2L 23 - Back Right",
+          "algorithm": "R' U R y' U R U' R'"
+        },
+        {
+          "name": "AF2L 23 - Back Right",
+          "algorithm": "R' U R y U L U' L'"
+        },
+        {
+          "name": "AF2L 23 - Back Right",
+          "algorithm": "L' u' L U' L' u L"
+        },
+        {
+          "name": "AF2L 24 - Front Right",
+          "algorithm": "R U' R' U2 L' U L"
+        },
+        {
+          "name": "AF2L 24 - Front Right",
+          "algorithm": "M F2 M'"
+        },
+        {
+          "name": "AF2L 24 - Front Right",
+          "algorithm": "U F r U2 r' F'"
+        },
+        {
+          "name": "AF2L 24 - Front Right",
+          "algorithm": "R U2 R' U' L' U L"
+        },
+        {
+          "name": "AF2L 24 - Front Left",
+          "algorithm": "L' U L2 U' L'"
+        },
+        {
+          "name": "AF2L 24 - Back Left",
+          "algorithm": "L U' L' U2 R' U R"
+        },
+        {
+          "name": "AF2L 24 - Back Left",
+          "algorithm": "R' L U2 L' R"
+        },
+        {
+          "name": "AF2L 24 - Back Right",
+          "algorithm": "R' U R2 U' R'"
+        },
+        {
+          "name": "AF2L 24 - Back Right",
+          "algorithm": "R' U2 R2 U2 R'"
+        },
+        {
+          "name": "AF2L 24 - Back Right",
+          "algorithm": "R2 F R2 F'"
+        },
+        {
+          "name": "AF2L 10a - Front Right",
+          "algorithm": "U' R U' R' U f R' f'"
+        },
+        {
+          "name": "AF2L 10a - Front Right",
+          "algorithm": "U' R U' R' d L U' L'"
+        },
+        {
+          "name": "AF2L 10a - Front Right",
+          "algorithm": "d' R' D' F' D R"
+        },
+        {
+          "name": "AF2L 10a - Front Left",
+          "algorithm": "y' U' F' R' U' R F"
+        },
+        {
+          "name": "AF2L 10a - Front Left",
+          "algorithm": "U' F U' F' U R U' R'"
+        },
+        {
+          "name": "AF2L 10a - Front Left",
+          "algorithm": "U L' U2 L y U2 L' U' L"
+        },
+        {
+          "name": "AF2L 10a - Back Left",
+          "algorithm": "U' F' D' L' D F"
+        },
+        {
+          "name": "AF2L 10a - Back Right",
+          "algorithm": "y U' F' R' U' R F"
+        },
+        {
+          "name": "AF2L 11a - Front Right",
+          "algorithm": "U' R U R' y' U' L' U' L"
+        },
+        {
+          "name": "AF2L 11a - Front Right",
+          "algorithm": "U' R U R' d' R' U' R"
+        },
+        {
+          "name": "AF2L 11a - Front Right",
+          "algorithm": "U' R U R' U' y2 F' U' F"
+        },
+        {
+          "name": "AF2L 11a - Front Left",
+          "algorithm": "U' F U F' U' R' U' R"
+        },
+        {
+          "name": "AF2L 11a - Back Left",
+          "algorithm": "U' L U L' U' F' U' F"
+        },
+        {
+          "name": "AF2L 11a - Back Left",
+          "algorithm": "U' L U L' y U' L' U' L"
+        },
+        {
+          "name": "AF2L 11a - Back Left",
+          "algorithm": "U' L U L' y' U' R' U' R"
+        },
+        {
+          "name": "AF2L 11a - Back Right",
+          "algorithm": "U' f R f' U' L' U' L"
+        },
+        {
+          "name": "AF2L 11a - Back Right",
+          "algorithm": "y U2 L U' F' U F L'"
+        },
+        {
+          "name": "AF2L 11a - Back Right",
+          "algorithm": "y' U2 L F' U' F L'"
+        },
+        {
+          "name": "AF2L 12a - Front Right",
+          "algorithm": "U' R U' R' U2 F' r U r'"
+        },
+        {
+          "name": "AF2L 12a - Front Right",
+          "algorithm": "U' R U' R' y L U2 L'"
+        },
+        {
+          "name": "AF2L 12a - Front Right",
+          "algorithm": "U' R U' R' y' U' R U' R'"
+        },
+        {
+          "name": "AF2L 12a - Front Left",
+          "algorithm": "U L' U2 L y' L' U' L"
+        },
+        {
+          "name": "AF2L 12a - Front Left",
+          "algorithm": "U' L' U' L y' U' L' U' L"
+        },
+        {
+          "name": "AF2L 12a - Front Left",
+          "algorithm": "U L' U2 L y R' U' R"
+        },
+        {
+          "name": "AF2L 12a - Back Left",
+          "algorithm": "U' L U' L' y' L U2 L'"
+        },
+        {
+          "name": "AF2L 12a - Back Right",
+          "algorithm": "U R' U2 R y' R' U' R"
+        },
+        {
+          "name": "AF2L 12a - Back Right",
+          "algorithm": "U R' U2 R y L' U' L"
+        }
+      ]
+    },
+    {
+      "subset": "Both Pieces Trapped",
+      "algorithms": [
+        {
+          "name": "AF2L 25 - Front Right",
+          "algorithm": "F' U R' U2 R F"
+        },
+        {
+          "name": "AF2L 25 - Front Right",
+          "algorithm": "R' F R F' U R' U2 R"
+        },
+        {
+          "name": "AF2L 25 - Front Right",
+          "algorithm": "R U' R' U' f R f'"
+        },
+        {
+          "name": "AF2L 25 - Front Right",
+          "algorithm": "R U R' U' B U' B'"
+        },
+        {
+          "name": "AF2L 25 - Front Left",
+          "algorithm": "R' F R2 U' R2 F' R"
+        },
+        {
+          "name": "AF2L 25 - Front Left",
+          "algorithm": "R' F R2 U R' F' R U2 R'"
+        },
+        {
+          "name": "AF2L 25 - Front Left",
+          "algorithm": "F R U' R2 F' R"
+        },
+        {
+          "name": "AF2L 25 - Front Left",
+          "algorithm": "L F' L' F R U' R'"
+        },
+        {
+          "name": "AF2L 25 - Back Left",
+          "algorithm": "L U L' y' U' R U' R'"
+        },
+        {
+          "name": "AF2L 25 - Back Left",
+          "algorithm": "L U' L' d' L U L'"
+        },
+        {
+          "name": "AF2L 25 - Back Left",
+          "algorithm": "L U L' F U2 F'"
+        },
+        {
+          "name": "AF2L 25 - Back Left",
+          "algorithm": "L U' L' U' F U F'"
+        },
+        {
+          "name": "AF2L 25 - Back Right",
+          "algorithm": "y R U' R' U' f R f'"
+        },
+        {
+          "name": "AF2L 25 - Back Right",
+          "algorithm": "R' U R d' R' U' R"
+        },
+        {
+          "name": "AF2L 25 - Back Right",
+          "algorithm": "R' U' R l U L' U' M'"
+        },
+        {
+          "name": "AF2L 26 - Front Right",
+          "algorithm": "L R U2 R' L'"
+        },
+        {
+          "name": "AF2L 26 - Front Right",
+          "algorithm": "R U' R' U2 L U L'"
+        },
+        {
+          "name": "AF2L 26 - Front Right",
+          "algorithm": "R U2 R' U L U' L'"
+        },
+        {
+          "name": "AF2L 26 - Front Right",
+          "algorithm": "R U R' U' L U2 L'"
+        },
+        {
+          "name": "AF2L 26 - Front Left",
+          "algorithm": "L' U' L U R' U2 R"
+        },
+        {
+          "name": "AF2L 26 - Front Left",
+          "algorithm": "L' R' U2 R L"
+        },
+        {
+          "name": "AF2L 26 - Back Left",
+          "algorithm": "L U L' U' R U2 R'"
+        },
+        {
+          "name": "AF2L 26 - Back Left",
+          "algorithm": "R L U2 L' R'"
+        },
+        {
+          "name": "AF2L 26 - Back Right",
+          "algorithm": "R' U' R U2 L' U L"
+        },
+        {
+          "name": "AF2L 26 - Back Right",
+          "algorithm": "R' L' U2 L R"
+        },
+        {
+          "name": "AF2L 27 - Front Right",
+          "algorithm": "R' F R2 U R' F'"
+        },
+        {
+          "name": "AF2L 27 - Front Right",
+          "algorithm": "R' F R2 U R2 F' R"
+        },
+        {
+          "name": "AF2L 27 - Front Right",
+          "algorithm": "R U R' F' r U r'"
+        },
+        {
+          "name": "AF2L 27 - Front Right",
+          "algorithm": "R' F R2 U R2 F' R2 U2 R'"
+        },
+        {
+          "name": "AF2L 27 - Front Left",
+          "algorithm": "L' U L U f' L' f"
+        },
+        {
+          "name": "AF2L 27 - Front Left",
+          "algorithm": "L' U' L U y' L' U L"
+        },
+        {
+          "name": "AF2L 27 - Front Left",
+          "algorithm": "L' U' L y R' U2 R"
+        },
+        {
+          "name": "AF2L 27 - Front Left",
+          "algorithm": "F U' L U2 L' F'"
+        },
+        {
+          "name": "AF2L 27 - Back Left",
+          "algorithm": "L U L' U y R U' R'"
+        },
+        {
+          "name": "AF2L 27 - Back Left",
+          "algorithm": "L U L' B' R B R'"
+        },
+        {
+          "name": "AF2L 27 - Back Left",
+          "algorithm": "L U' L' U f R f'"
+        },
+        {
+          "name": "AF2L 27 - Back Right",
+          "algorithm": "F' R' U2 R U' F"
+        },
+        {
+          "name": "AF2L 27 - Back Right",
+          "algorithm": "R' U' R U y L' U L"
+        },
+        {
+          "name": "AF2L 27 - Back Right",
+          "algorithm": "R' U R d R' U' R"
+        },
+        {
+          "name": "AF2L 27 - Back Right",
+          "algorithm": "R' U' R F' U2 F"
+        },
+        {
+          "name": "AF2L 28 - Front Right",
+          "algorithm": "R U' R2 U' R U' R' U' R"
+        },
+        {
+          "name": "AF2L 28 - Front Right",
+          "algorithm": "R U' R' U' R U' R2 U' R"
+        },
+        {
+          "name": "AF2L 28 - Front Right",
+          "algorithm": "r U' r' U2 r U r' d' R U R'"
+        },
+        {
+          "name": "AF2L 28 - Front Right",
+          "algorithm": "R U R y2 U2 L U L' U L2"
+        },
+        {
+          "name": "AF2L 28 - Front Left",
+          "algorithm": "L' U L U R U R' U R U' R'"
+        },
+        {
+          "name": "AF2L 28 - Front Left",
+          "algorithm": "F U' R U R' U R U' R' F' R U' R'"
+        },
+        {
+          "name": "AF2L 28 - Back Left",
+          "algorithm": "L U' L2 U' L U' L' U' L"
+        },
+        {
+          "name": "AF2L 28 - Back Right",
+          "algorithm": "R' U R U L U L' U L U' L'"
+        },
+        {
+          "name": "AF2L 29 - Front Right",
+          "algorithm": "F' U L' U L U' L U L' F"
+        },
+        {
+          "name": "AF2L 29 - Front Right",
+          "algorithm": "R U' R' U' R U' R' d' R' U' R"
+        },
+        {
+          "name": "AF2L 29 - Front Right",
+          "algorithm": "R U' R' y R' U R U R' U' R"
+        },
+        {
+          "name": "AF2L 29 - Front Right",
+          "algorithm": "F' U F L U L' U L U' L'"
+        },
+        {
+          "name": "AF2L 29 - Front Left",
+          "algorithm": "L' U L B L' B L B2"
+        },
+        {
+          "name": "AF2L 29 - Front Left",
+          "algorithm": "L' U L y' L U L' U L U' L'"
+        },
+        {
+          "name": "AF2L 29 - Front Left",
+          "algorithm": "L' U' L U L' U L f R f'"
+        },
+        {
+          "name": "AF2L 29 - Front Left",
+          "algorithm": "L' U L y R U R' U R U' R'"
+        },
+        {
+          "name": "AF2L 29 - Back Left",
+          "algorithm": "f' L f R U R2 F R F'"
+        },
+        {
+          "name": "AF2L 29 - Back Left",
+          "algorithm": "L U' L' U' L U' L' d' L' U' L"
+        },
+        {
+          "name": "AF2L 29 - Back Left",
+          "algorithm": "L U' L' y' R' U R U R' U' R"
+        },
+        {
+          "name": "AF2L 29 - Back Left",
+          "algorithm": "L U' L' y L' U L U L' U' L"
+        },
+        {
+          "name": "AF2L 29 - Back Right",
+          "algorithm": "R' U R F R' F R F2"
+        },
+        {
+          "name": "AF2L 29 - Back Right",
+          "algorithm": "R' U R y' R U R' U R U' R'"
+        },
+        {
+          "name": "AF2L 30 - Front Right",
+          "algorithm": "R U' R' U' L' U L U L' U' L"
+        },
+        {
+          "name": "AF2L 30 - Front Right",
+          "algorithm": "R U' R' U' R U' R' U2 L' U' L"
+        },
+        {
+          "name": "AF2L 30 - Front Right",
+          "algorithm": "r U' r' U2 r U r' d R U R'"
+        },
+        {
+          "name": "AF2L 30 - Front Left",
+          "algorithm": "L' U L U' L U L' U L U' L'"
+        },
+        {
+          "name": "AF2L 30 - Back Left",
+          "algorithm": "L U' L' U' R' U R U R' U' R"
+        },
+        {
+          "name": "AF2L 30 - Back Right",
+          "algorithm": "R' U R U' R U R' U R U' R'"
+        },
+        {
+          "name": "AF2L 31 - Front Right",
+          "algorithm": "R U R' U' R U' R' U R' U' R"
+        },
+        {
+          "name": "AF2L 31 - Front Right",
+          "algorithm": "R U' R' U R' U' R U' R' U R"
+        },
+        {
+          "name": "AF2L 31 - Front Left",
+          "algorithm": "R' F R U' R' F' R2 U R' U R U R'"
+        },
+        {
+          "name": "AF2L 31 - Front Left",
+          "algorithm": "L' U L U L' U L U2 R U R'"
+        },
+        {
+          "name": "AF2L 31 - Front Left",
+          "algorithm": "L' U L U R U' R' U' R U R'"
+        },
+        {
+          "name": "AF2L 31 - Back Left",
+          "algorithm": "L U' L' U L' U' L U' L' U L"
+        },
+        {
+          "name": "AF2L 31 - Back Right",
+          "algorithm": "R' U R U L U' L' U' L U L'"
+        },
+        {
+          "name": "AF2L 32 - Front Right",
+          "algorithm": "R U R' U' R U' R' f' L' f"
+        },
+        {
+          "name": "AF2L 32 - Front Right",
+          "algorithm": "R U' R' U f' U' L' U L' f"
+        },
+        {
+          "name": "AF2L 32 - Front Right",
+          "algorithm": "R U R' F R U R' U' F' L U2 L'"
+        },
+        {
+          "name": "AF2L 32 - Front Right",
+          "algorithm": "R U' R' y R' U' R U' R' U R"
+        },
+        {
+          "name": "AF2L 32 - Front Left",
+          "algorithm": "F U' R U' R' U R' U' R F'"
+        },
+        {
+          "name": "AF2L 32 - Front Left",
+          "algorithm": "L' U L y' L U' L' U' L U L'"
+        },
+        {
+          "name": "AF2L 32 - Front Left",
+          "algorithm": "L' U L U L' U L U f R f'"
+        },
+        {
+          "name": "AF2L 32 - Back Left",
+          "algorithm": "L U' L' y L' U' L U' L' U L"
+        },
+        {
+          "name": "AF2L 32 - Back Left",
+          "algorithm": "L U' L' y' R' U' R U' R' U R"
+        },
+        {
+          "name": "AF2L 32 - Back Left",
+          "algorithm": "L U L' U' L U' L' b' R' b"
+        },
+        {
+          "name": "AF2L 32 - Back Left",
+          "algorithm": "L U' L' F' L F' L' F2"
+        },
+        {
+          "name": "AF2L 32 - Back Right",
+          "algorithm": "R' U R U' L' U L d' L U L'"
+        },
+        {
+          "name": "AF2L 32 - Back Right",
+          "algorithm": "R' U R y L U' L' U' L U L'"
+        },
+        {
+          "name": "AF2L 32 - Back Right",
+          "algorithm": "R' U R y' R U' R' U' R U R'"
+        },
+        {
+          "name": "AF2L 33 - Front Right",
+          "algorithm": "R U' R' U' L' U' L U' L' U L"
+        },
+        {
+          "name": "AF2L 33 - Front Right",
+          "algorithm": "R U R' U' R U' R' U' L' U' L"
+        },
+        {
+          "name": "AF2L 33 - Front Right",
+          "algorithm": "y' R' U R2 U R' U R U R'"
+        },
+        {
+          "name": "AF2L 33 - Front Right",
+          "algorithm": "y L' U L2 U L' U L U L'"
+        },
+        {
+          "name": "AF2L 33 - Front Left",
+          "algorithm": "L' U L2 U L' U L U L'"
+        },
+        {
+          "name": "AF2L 33 - Front Left",
+          "algorithm": "L' U L U L' U L2 U L'"
+        },
+        {
+          "name": "AF2L 33 - Back Left",
+          "algorithm": "L U' L' U' R' U' R U' R' U R"
+        },
+        {
+          "name": "AF2L 33 - Back Right",
+          "algorithm": "R' U R U R' U R2 U R'"
+        },
+        {
+          "name": "AF2L 33 - Back Right",
+          "algorithm": "R' U R2 U R' U R U R'"
+        },
+        {
+          "name": "AF2L 34 - Front Right",
+          "algorithm": "F' R' U R U' R' U' R F"
+        },
+        {
+          "name": "AF2L 34 - Front Right",
+          "algorithm": "R U' R' U' R U R' U f R' f'"
+        },
+        {
+          "name": "AF2L 34 - Front Right",
+          "algorithm": "R U' R' U' R U R' r' U' R U M'"
+        },
+        {
+          "name": "AF2L 34 - Front Right",
+          "algorithm": "R U' R2 f' U' f R"
+        },
+        {
+          "name": "AF2L 34 - Front Left",
+          "algorithm": "L' U' L U y' R' U R U' R' U' R"
+        },
+        {
+          "name": "AF2L 34 - Front Left",
+          "algorithm": "L' U L y' U2 R' U2 R U' R' U R"
+        },
+        {
+          "name": "AF2L 34 - Front Left",
+          "algorithm": "L' U' L d R' U R U' R' U' R"
+        },
+        {
+          "name": "AF2L 34 - Front Left",
+          "algorithm": "F U' R U' R' F' R U' R' U' R U R'"
+        },
+        {
+          "name": "AF2L 34 - Back Left",
+          "algorithm": "L U L' y U2 L U2 L' U' L U L'"
+        },
+        {
+          "name": "AF2L 34 - Back Left",
+          "algorithm": "L U' L' U' L U L' U y L U' L'"
+        },
+        {
+          "name": "AF2L 34 - Back Left",
+          "algorithm": "L U' L' U' L U L' F' L F L'"
+        },
+        {
+          "name": "AF2L 34 - Back Right",
+          "algorithm": "R' U' R y U R' U R U' R' U' R"
+        },
+        {
+          "name": "AF2L 34 - Back Right",
+          "algorithm": "R' U R y U2 R' U2 R U' R' U R"
+        },
+        {
+          "name": "AF2L 35 - Front Right",
+          "algorithm": "R U' R' U' R U R' L U' L'"
+        },
+        {
+          "name": "AF2L 35 - Front Right",
+          "algorithm": "R U' R' U' R U M' B' r'"
+        },
+        {
+          "name": "AF2L 35 - Front Right",
+          "algorithm": "R U R' U' R U2 R' U L U L'"
+        },
+        {
+          "name": "AF2L 35 - Front Right",
+          "algorithm": "R U2 R' L U2 L' U' L U L'"
+        },
+        {
+          "name": "AF2L 35 - Front Left",
+          "algorithm": "L' U' L R' U R U' R' U' R"
+        },
+        {
+          "name": "AF2L 35 - Front Left",
+          "algorithm": "L' U L U R' U2 R U' R' U R"
+        },
+        {
+          "name": "AF2L 35 - Back Left",
+          "algorithm": "L U' L' U' L U L' R U' R'"
+        },
+        {
+          "name": "AF2L 35 - Back Left",
+          "algorithm": "L U L' U R U2 R' U' R U R'"
+        },
+        {
+          "name": "AF2L 35 - Back Left",
+          "algorithm": "y' L' U L U R' U2 R U' R' U R"
+        },
+        {
+          "name": "AF2L 35 - Back Right",
+          "algorithm": "R' U R U L' U2 L U' L' U L"
+        },
+        {
+          "name": "AF2L 35 - Back Right",
+          "algorithm": "R' U' R L' U L U' L' U' L"
+        },
+        {
+          "name": "AF2L 35 - Back Right",
+          "algorithm": "y R U2 R' L U2 L' U' L U L'"
+        },
+        {
+          "name": "AF2L 35 - Back Right",
+          "algorithm": "y R U' R' U' R U R' L U' L'"
+        },
+        {
+          "name": "AF2L 36 - Front Right",
+          "algorithm": "R' F R2 U' R' U' R U R' U2 F'"
+        },
+        {
+          "name": "AF2L 36 - Front Right",
+          "algorithm": "R' F R F' U2 L' U L U' L' U' L"
+        },
+        {
+          "name": "AF2L 36 - Front Right",
+          "algorithm": "R U' R' U' R U R' U' F U' F'"
+        },
+        {
+          "name": "AF2L 36 - Front Right",
+          "algorithm": "R U' R' U' R U R' F U2 F'"
+        },
+        {
+          "name": "AF2L 36 - Front Left",
+          "algorithm": "L' U' L d' R' U R U' R' U' R"
+        },
+        {
+          "name": "AF2L 36 - Front Left",
+          "algorithm": "L' U L y R' U2 R U' R' U R"
+        },
+        {
+          "name": "AF2L 36 - Front Left",
+          "algorithm": "L' U L y' L' U2 L U' L' U L"
+        },
+        {
+          "name": "AF2L 36 - Front Left",
+          "algorithm": "F U L U2 L' U' L U L' F'"
+        },
+        {
+          "name": "AF2L 36 - Back Left",
+          "algorithm": "L U' L' U' L U L' y' L U2 L'"
+        },
+        {
+          "name": "AF2L 36 - Back Left",
+          "algorithm": "L U L' y' L U2 L' U' L U L'"
+        },
+        {
+          "name": "AF2L 36 - Back Left",
+          "algorithm": "L U' L' R' F R U R' U' F' R"
+        },
+        {
+          "name": "AF2L 36 - Back Right",
+          "algorithm": "R' U2 R y' R' U R U' R' U' R"
+        },
+        {
+          "name": "AF2L 36 - Back Right",
+          "algorithm": "R' U R y' R' U2 R U' R' U R"
+        },
+        {
+          "name": "AF2L 36 - Back Right",
+          "algorithm": "R' U R U' R' U2 L F' R2 U' R2 U F L' R"
+        },
+        {
+          "name": "AF2L 36 - Back Right",
+          "algorithm": "R' U R2 U' R2 F R F' R U' R'"
+        },
+        {
+          "name": "AF2L 37 - Front Right",
+          "algorithm": "R U R' U2 R U' R' f R f'"
+        },
+        {
+          "name": "AF2L 37 - Front Right",
+          "algorithm": "F' U' R' U2 R U R' U' R F"
+        },
+        {
+          "name": "AF2L 37 - Front Right",
+          "algorithm": "R U' R' y R U2 R' U R U' R'"
+        },
+        {
+          "name": "AF2L 37 - Front Right",
+          "algorithm": "R U' R' U R U2 R' y R U' R'"
+        },
+        {
+          "name": "AF2L 37 - Front Left",
+          "algorithm": "L' U' L y' R' U2 R U R' U' R"
+        },
+        {
+          "name": "AF2L 37 - Front Left",
+          "algorithm": "L' U' L y L' U2 L U L' U' L"
+        },
+        {
+          "name": "AF2L 37 - Front Left",
+          "algorithm": "L' U L U L' U' L y' R' U2 R"
+        },
+        {
+          "name": "AF2L 37 - Front Left",
+          "algorithm": "F U2 R U' R' F' U R U R'"
+        },
+        {
+          "name": "AF2L 37 - Back Left",
+          "algorithm": "L U' L' y L U2 L' U L U' L'"
+        },
+        {
+          "name": "AF2L 37 - Back Left",
+          "algorithm": "L U L' y U L U' L' U L U L'"
+        },
+        {
+          "name": "AF2L 37 - Back Right",
+          "algorithm": "R' U R U R' U' R y R' U2 R"
+        },
+        {
+          "name": "AF2L 37 - Back Right",
+          "algorithm": "R' U' R y R' U2 R U R' U' R"
+        },
+        {
+          "name": "AF2L 38 - Front Right",
+          "algorithm": "R U' R' U R U2 R' L U2 L'"
+        },
+        {
+          "name": "AF2L 38 - Front Right",
+          "algorithm": "R U' R' U' L U2 L' U L U' L'"
+        },
+        {
+          "name": "AF2L 38 - Front Right",
+          "algorithm": "R U R' L U' L' U L U L'"
+        },
+        {
+          "name": "AF2L 38 - Front Right",
+          "algorithm": "R U' R' U R U2 R' U' L U' L'"
+        },
+        {
+          "name": "AF2L 38 - Front Left",
+          "algorithm": "L' U L U L' U' L R' U R"
+        },
+        {
+          "name": "AF2L 38 - Front Left",
+          "algorithm": "F U2 R U' R' f R f' F'"
+        },
+        {
+          "name": "AF2L 38 - Front Left",
+          "algorithm": "L' U2 L R' U2 R U R' U' R"
+        },
+        {
+          "name": "AF2L 38 - Back Left",
+          "algorithm": "L U' L' U' R U2 R' U R U' R'"
+        },
+        {
+          "name": "AF2L 38 - Back Left",
+          "algorithm": "L U L' R U' R' U R U R'"
+        },
+        {
+          "name": "AF2L 38 - Back Right",
+          "algorithm": "R' U' R U' L' U2 L U L' U' L"
+        },
+        {
+          "name": "AF2L 38 - Back Right",
+          "algorithm": "R' U R U R' U' R L' U L"
+        },
+        {
+          "name": "AF2L 39 - Front Right",
+          "algorithm": "R U R' d' L U' L' U L U L'"
+        },
+        {
+          "name": "AF2L 39 - Front Right",
+          "algorithm": "R U R' U' y' R U' R' U R U R'"
+        },
+        {
+          "name": "AF2L 39 - Front Right",
+          "algorithm": "R U R' L' U L U' L F' L' F L' U L"
+        },
+        {
+          "name": "AF2L 39 - Front Right",
+          "algorithm": "R U' R' y' U2 R U2 R' U R U' R'"
+        },
+        {
+          "name": "AF2L 39 - Front Left",
+          "algorithm": "F L U' L' U L U L' F'"
+        },
+        {
+          "name": "AF2L 39 - Front Left",
+          "algorithm": "L' U L l U' L' U L U l'"
+        },
+        {
+          "name": "AF2L 39 - Front Left",
+          "algorithm": "L' U' L y U2 R' U2 R U R' U' R"
+        },
+        {
+          "name": "AF2L 39 - Front Left",
+          "algorithm": "L' U' L y' U2 L' U2 L U L' U' L"
+        },
+        {
+          "name": "AF2L 39 - Back Left",
+          "algorithm": "L U' L' y' U2 L U2 L' U L U' L'"
+        },
+        {
+          "name": "AF2L 39 - Back Left",
+          "algorithm": "L U L' y' U' L U' L' U L U L'"
+        },
+        {
+          "name": "AF2L 39 - Back Left",
+          "algorithm": "f' L f U2 R' U' R U R' U2 R"
+        },
+        {
+          "name": "AF2L 39 - Back Right",
+          "algorithm": "R' U' R y' U2 R' U2 R U R' U' R"
+        },
+        {
+          "name": "AF2L 39 - Back Right",
+          "algorithm": "R' U R L F' R' F R F L'"
+        },
+        {
+          "name": "AF2L 39 - Back Right",
+          "algorithm": "R' U' R U d R' U2 R U R' U' R"
+        },
+        {
+          "name": "AF2L 40 - Front Right",
+          "algorithm": "R U' R2 U2 R U R' U2 R"
+        },
+        {
+          "name": "AF2L 40 - Front Right",
+          "algorithm": "R U' R2 U2 R U2 R' U R"
+        },
+        {
+          "name": "AF2L 40 - Front Right",
+          "algorithm": "F R' F' R U' R U2 R2 U' R"
+        },
+        {
+          "name": "AF2L 40 - Front Right",
+          "algorithm": "R' F R F' R U' R' U R U' R' U y R U' R'"
+        },
+        {
+          "name": "AF2L 40 - Front Left",
+          "algorithm": "F2 R' F2 D' R U' R' D R"
+        },
+        {
+          "name": "AF2L 40 - Front Left",
+          "algorithm": "L' U' L R U' R' U R U' R' U2 R U' R'"
+        },
+        {
+          "name": "AF2L 40 - Front Left",
+          "algorithm": "L' U' L R' U2 R2 U R2 U R"
+        },
+        {
+          "name": "AF2L 40 - Front Left",
+          "algorithm": "L' U L U2 R U2 R' U2 R U' R'"
+        },
+        {
+          "name": "AF2L 40 - Back Left",
+          "algorithm": "L U' L2 U2 L U2 L' U L"
+        },
+        {
+          "name": "AF2L 40 - Back Left",
+          "algorithm": "L U' L2 U2 L U L' U2 L"
+        },
+        {
+          "name": "AF2L 40 - Back Right",
+          "algorithm": "R' U R U2 L U2 L' U2 L U' L'"
+        },
+        {
+          "name": "AF2L 41 - Front Right",
+          "algorithm": "R U' R' d R' U2 R L' U L"
+        },
+        {
+          "name": "AF2L 41 - Front Right",
+          "algorithm": "F' U2 L' U2 L2 U L' F"
+        },
+        {
+          "name": "AF2L 41 - Front Right",
+          "algorithm": "R U' R' U y L' U2 L R' U R"
+        },
+        {
+          "name": "AF2L 41 - Front Right",
+          "algorithm": "R U' R' y U' R' U2 R U R' U2 R"
+        },
+        {
+          "name": "AF2L 41 - Front Left",
+          "algorithm": "F U2 R U2 R2 U' R F'"
+        },
+        {
+          "name": "AF2L 41 - Front Left",
+          "algorithm": "L' U L U2 r U2 R2 U' R2 U' r'"
+        },
+        {
+          "name": "AF2L 41 - Back Left",
+          "algorithm": "L U L' R U2 R' y' U R' U' R"
+        },
+        {
+          "name": "AF2L 41 - Back Left",
+          "algorithm": "L U L' R U2 R' U F' U' F"
+        },
+        {
+          "name": "AF2L 41 - Back Right",
+          "algorithm": "R' U R y' U R U2 R' U2 R U' R'"
+        },
+        {
+          "name": "AF2L 41 - Back Right",
+          "algorithm": "R' U' R L' U2 L y U' L U L'"
+        },
+        {
+          "name": "AF2L 41 - Back Right",
+          "algorithm": "R' U' R L' U2 L U' F U F'"
+        },
+        {
+          "name": "AF2L 42 - Front Right",
+          "algorithm": "R U' R' U2 L' U2 L U2 L' U L"
+        },
+        {
+          "name": "AF2L 42 - Front Right",
+          "algorithm": "y' R' U R2 U2 R' U2 R U' R'"
+        },
+        {
+          "name": "AF2L 42 - Front Right",
+          "algorithm": "y' R' U R2 U2 R' U' R U2 R'"
+        },
+        {
+          "name": "AF2L 42 - Front Right",
+          "algorithm": "R' F R F' R U' R' U R U' R' d' L U' L'"
+        },
+        {
+          "name": "AF2L 42 - Front Left",
+          "algorithm": "L' U L2 U2 L' U2 L U' L'"
+        },
+        {
+          "name": "AF2L 42 - Front Left",
+          "algorithm": "L' U L2 U2 L' U' L U2 L'"
+        },
+        {
+          "name": "AF2L 42 - Front Left",
+          "algorithm": "L' U' L F' U' L F' L' F L U L' F"
+        },
+        {
+          "name": "AF2L 42 - Back Left",
+          "algorithm": "L U L' R U2 R2 U' R2 U' R'"
+        },
+        {
+          "name": "AF2L 42 - Back Right",
+          "algorithm": "R' U R2 U2 R' U R' F R F'"
+        },
+        {
+          "name": "AF2L 42 - Back Right",
+          "algorithm": "R' U R2 U2 R' U2 R U' R'"
+        },
+        {
+          "name": "AF2L 42 - Back Right",
+          "algorithm": "R' U' R U2 R' U2 R2 U R'"
         }
       ]
     }
