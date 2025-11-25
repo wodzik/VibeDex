@@ -206,6 +206,13 @@ function resetTimerForModeSwitch() {
 
 function openAttackScreen(category: AttackCategory) {
   resetTimerForModeSwitch();
+
+  if (category === 'PLL') {
+    twistyPlayer.experimentalStickering = 'full';
+  } else if (category === 'OLL') {
+    twistyPlayer.experimentalStickering = 'OLL';
+  }
+
   $('#top-row').show();
   $('#main-column').show();
   $('#app-top').show();
@@ -2336,6 +2343,8 @@ $('#load-alg').on('click', () => {
   const categorySelect = $('#category-select');
   if (categorySelect.val() === null || categorySelect.val() === '') {
     loadCategories();
+  } else {
+    setStickering(categorySelect.val()?.toString() || '');
   }
   $('#load-container').show();
   $('#save-container').hide();
